@@ -8,7 +8,13 @@
 		
 		<title>to its fullest</title>
 		
-		<script language="javascript" src="js/detectmobile.js"></script>
+		<!-- Detect if mobile browser -->
+		<script language="javascript" src="js/jquery.js"></script>
+		<script>
+			if ((screen.width < 1024) && (screen.height < 768)) { 
+				window.location = 'http://mobile.site.com';
+			}
+		</script>
 		
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet" />
