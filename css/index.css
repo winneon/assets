@@ -4,12 +4,19 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	font-family: 'Open Sans', sans-serif;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar {
+	display: none;
+}
+div.header {
+	background: url('../images/bg-static.png');
+	height: 100vh;
 }
 div.main {
 	background-color: rgba(45, 45, 45, 0.3);
 	color: #FFFFFF;
 	text-align: center;
-	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -28,7 +35,7 @@ div.center {
 	margin-top: -100px;
 }
 div.divider {
-	background: url(../images/divider.png) no-repeat bottom center;
+	background: url('../images/divider.png') no-repeat bottom center;
 	padding-bottom: 12px;
 	display: block;
 	height: 10px;
@@ -37,14 +44,38 @@ div.divider {
 	text-align: center;
 	margin: auto auto 24px;
 }
-span.title {
+div#title {
 	font-family: 'ChunkFive';
 	font-size: 72px;
 }
-span.subtitle {
-	font-weight: bold;
+div.subtitle {
 	font-size: 16px;
+	font-weight: bold;
 	text-transform: uppercase;
+}
+div.navi {
+	background-color: #EEEEEE;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	text-align: center;
+}
+span.navi {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+a.navi {
+	background-color: #DDDDDD;
+	border-radius: 5px;
+	padding: 10px 15px 10px 15px;
+	color: #000000;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 0px #000000;
+}
+a.navi:hover {
+	background-color: #CBCBCB;
+	text-decoration: none;
 }
 @font-face {
 	font-family: 'ChunkFive';
