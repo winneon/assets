@@ -1,10 +1,11 @@
 body {
 	margin: 0px;
 	background-color: #EEEEEE;
-	padding-top: 25px;
 	color: #2D2D2D;
 	font-family: 'Open Sans', sans-serif;
 	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	box-align: center;
 }
 ::-webkit-scrollbar {
 	display: none;
@@ -13,8 +14,9 @@ div.main {
 	height: 100vh;
 }
 div.header {
-	box-align: center;
+	padding-top: 25px;
 	text-align: center;
+	height: 30%;
 }
 div#title {
 	font-family: 'ChunkFive';
@@ -35,6 +37,57 @@ div.divider {
 	text-align: center;
 	margin: auto auto 24px;
 	width: 400px;
+}
+div.content {
+	height: 70%;
+}
+div.container {
+	width: 1026px;
+	margin: 0px auto;
+}
+div.entry {
+	float: left;
+	border-left: 1px dashed #2D2D2D;
+	border-right: 1px dashed #2D2D2D;
+	width: 300px;
+	height: 350px;
+	margin: 20px;
+}
+div.entry_title {
+	padding-top: 10px;
+	font-family: 'ChunkFive';
+	font-size: 36px;
+}
+div.entry_divider {
+	background: url('../images/divider_dark.png') no-repeat bottom center;
+	padding-bottom: 12px;
+	display: block;
+	height: 10px;
+	content: ",";
+	text-indent: -9999px;
+	text-align: center;
+	margin: auto auto 24px;
+	width: 250px;
+}
+div.entry_content {
+	width: 250px;
+	margin: auto;
+	font-size: 16px;
+}
+a.github-page {
+	background-color: #DDDDDD;
+	border-radius: 10px;
+	padding: 20px 30px 20px 30px;
+	color: #000000;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0px 0px 0px #000000;
+	text-transform: uppercase;
+}
+a.github-page:hover {
+	background-color: #CBCBCB;
+	text-decoration: none;
 }
 div.navi {
 	background-color: #DDDDDD;
