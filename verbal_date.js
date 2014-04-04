@@ -46,8 +46,28 @@ VerbalDate.prototype = (function(){
 	return {
 		constructor:VerbalDate,
 		
-		getDate:function(){
+		getDay:function(){
 			return convert(date.getDate(), false);
+		},
+		
+		getDayOfWeek:function(){
+			return days[date.getDay()];
+		},
+		
+		getMonth:function(){
+			return months[date.getMonth()];
+		},
+		
+		getYear:function(){
+			return date.getYear();
+		},
+		
+		getHour:function(){
+			return convert(date.getHours() > 12 && this.hours12 ? date.getHours() - 12 : date.getHours(), false);
+		},
+		
+		getMinute:function(){
+			return convert(date.getMinutes(), true);
 		}
 	};
 })();
