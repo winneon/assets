@@ -1,6 +1,5 @@
-function VerbalDate(){ }
-
-VerbalDate.prototype = (function(hours12){
+function VerbalDate(hours12){
+	var hours = hours12;
 	var date = new Date();
 	
 	var days = ["Sunday", "Monday", "Tuesday", "Wednesday",
@@ -42,8 +41,6 @@ VerbalDate.prototype = (function(hours12){
 	};
 	
 	return {
-		constructor:VerbalDate,
-		
 		getDay:function(){
 			return convert(date.getDate(), false);
 		},
@@ -61,11 +58,11 @@ VerbalDate.prototype = (function(hours12){
 		},
 		
 		getHour:function(){
-			return convert(date.getHours() > 12 && this.hours12 ? date.getHours() - 12 : date.getHours(), false);
+			return convert(date.getHours() > 12 && hours ? date.getHours() - 12 : date.getHours(), false);
 		},
 		
 		getMinute:function(){
 			return convert(date.getMinutes(), true);
 		}
 	};
-})();
+}
