@@ -1,8 +1,6 @@
-function VerbalDate(hours12){
-	this.hours12 = hours12;
-}
+function VerbalDate(){ }
 
-VerbalDate.prototype = (function(){
+VerbalDate.prototype = (function(hours12){
 	var date = new Date();
 	
 	var days = ["Sunday", "Monday", "Tuesday", "Wednesday",
