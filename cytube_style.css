@@ -1,0 +1,20 @@
+div#motdwrap {
+	border: 0;
+	border-radius: 0px;
+	background-color: rgba(0, 0, 0, 0.0);
+}
+button#togglemotd {
+	display: none;
+}
+#chatheader, #currenttitle, #userlist, #messagebuffer {
+	border: 0;
+}
+body {
+	font-family: 'Open Sans';
+}
+.userlist_owner {
+	color: #04A304 !important;
+}
+.glyphicon-time {
+	display: none;
+}
