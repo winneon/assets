@@ -30,6 +30,7 @@ body {
 #main {
 	padding-top: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.6);
+	border-bottom: 0;
 }
 #motd {
 	padding-top: 40px;
