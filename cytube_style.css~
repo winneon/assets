@@ -16,13 +16,13 @@ body {
 .userlist_owner {
 	color: #04A304 !important;
 }
-.glyphicon-time {
+.glyphicon-time, #modflair, #userlisttoggle {
 	display: none;
 }
 #chatline {
 	border-radius: 0px;
 }
-.navbar, #chatwrap {
+.navbar, #chatheader, #userlist, #messagebuffer {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-nav > li > a {
