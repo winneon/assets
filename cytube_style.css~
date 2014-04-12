@@ -9,6 +9,7 @@ div#motdwrap {
 }
 #chatline {
 	background-color: rgba(34, 34, 34, 0.5) !important;
+	margin-top: 10px;
 }
 body {
 	font-family: 'Open Sans';
