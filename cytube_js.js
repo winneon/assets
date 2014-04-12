@@ -13,5 +13,3 @@ title.attr("target", "_blank");
 var navbar = $(".navbar-nav");
 
 navbar.prepend("<li><a href='test'>Test</a></li>");
-navbar.remove(":contains('Home')");
-navbar.remove(":contains('Layout')");
