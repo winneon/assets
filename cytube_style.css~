@@ -24,10 +24,10 @@ body {
 .glyphicon-time, #modflair, #userlisttoggle, #togglemotd {
 	display: none;
 }
-.navbar, #main, #controlsrow, #playlistrow {
+.navbar, #main, #controlsrow, #playlistrow, .btn {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
-.navbar-nav > li > a {
+.navbar-nav > li > a, .btn {
 	border: 0 !important;
 }
 .navbar-nav > li > a:hover {
@@ -45,5 +45,5 @@ body {
 }
 .nick-highlight {
 	font-weight: bold !important;
-	color: white;
+	color: yellow;
 }

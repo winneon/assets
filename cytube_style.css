@@ -3,7 +3,7 @@ div#motdwrap {
 	border-radius: 0px;
 	background-color: rgba(0, 0, 0, 0.0);
 }
-#chatheader, #currenttitle, #userlist, #messagebuffer, #plmeta, #chatline {
+#chatheader, #currenttitle, #userlist, #messagebuffer, #plmeta, #chatline, .btn {
 	border: 0;
 	border-radius: 0px;
 }
@@ -24,13 +24,13 @@ body {
 .glyphicon-time, #modflair, #userlisttoggle, #togglemotd {
 	display: none;
 }
-.navbar, #main, #controlsrow, #playlistrow {
+.navbar, #main, #controlsrow, #playlistrow, .btn {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-nav > li > a {
 	border: 0 !important;
 }
-.navbar-nav > li > a:hover {
+.navbar-nav > li > a:hover, .btn {
 	background: rgba(0, 0, 0, 0.8) !important;
 }
 #main {
@@ -46,4 +46,7 @@ body {
 .nick-highlight {
 	font-weight: bold !important;
 	color: yellow;
+}
+.btn:hover {
+	border: 1px solid rgba(255, 255, 255, 0.3);
 }
