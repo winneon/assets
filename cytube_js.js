@@ -12,5 +12,8 @@ navbar.append("<li><a id='showchansettings' href='#' onclick=\"javascript:$('#ch
 
 setVisible("#showchansettings", CLIENT.rank >= 2);
 
-$("#modflair").removeClass("label-default").addClass("label-success");
-//$("#adminflair").removeClass("label-default").addClass("label-danger");
+if (CLIENT.rank >= 255){
+	USEROPTS.adminhat = true;
+} else if (CLIENT.rank >= 2){
+	USEROPTS.modhat = true;
+}
