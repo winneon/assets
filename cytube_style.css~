@@ -1,7 +1,7 @@
 div#motdwrap {
 	border: 0;
 	border-radius: 0px;
-	background-color: rgba(0, 0, 0, 0.0);
+	background-color: none;
 }
 #chatheader, #currenttitle, #userlist, #messagebuffer, #plmeta, #chatline {
 	border: 0;
