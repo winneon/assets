@@ -55,3 +55,6 @@ body {
 .server-msg-reconnect, #currenttitle {
 	font-weight: 700;
 }
+::-webkit-scrollbar {
+	display: none;
+}
