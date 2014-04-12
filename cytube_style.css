@@ -28,3 +28,6 @@ body {
 .navbar-nav > li > a {
 	border: 0 !important;
 }
+.navbar-nav > li > a:hover {
+	background: rgba(0, 0, 0, 0.8) !important;
+}

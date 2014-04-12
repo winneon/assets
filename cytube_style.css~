@@ -26,5 +26,5 @@ body {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-nav > li > a {
-	border: 0;
+	border: 0 !important;
 }
