@@ -49,4 +49,5 @@ body {
 }
 .btn:hover, #chatline:hover, #chatline:focus {
 	background-color: rgba(65, 65, 65, 0.5) !important;
+	box-shadow: 0px 0px 0px black !important;
 }

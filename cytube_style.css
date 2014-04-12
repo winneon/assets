@@ -18,7 +18,7 @@ body {
 .userlist_owner {
 	color: #04A304 !important;
 }
-.glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd {
+.glyphicon-time, #userlisttoggle, #togglemotd {
 	display: none;
 }
 .navbar, #main, #controlsrow, #playlistrow {
