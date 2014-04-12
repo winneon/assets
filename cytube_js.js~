@@ -4,6 +4,9 @@ js.type = "text/javascript";
 js.src = "http://cytu.be/js/util.js";
 document.head.appendChild(js);
 
+js.src = "http://cytu.be/js/data.js";
+document.head.appendChild(js);
+
 var title = $(".navbar-brand");
 
 title.html("WC // Publix Cytube");
