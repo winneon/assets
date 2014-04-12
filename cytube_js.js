@@ -5,5 +5,5 @@ js.src = "http://cytu.be/js/util.js";
 
 document.head.appendChild(js);
 
-makeAlert("Welcome to WA", "", false);
-alert("test");
+var welcome = makeAlert("Welcome to WA", "", false);
+alert(welcome);
