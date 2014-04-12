@@ -70,3 +70,6 @@ html, body {
 	padding-right: 15px;
 	overflow-y: scroll;
 }
+.text-muted {
+	color: #cccccc;
+}
