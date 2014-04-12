@@ -64,3 +64,6 @@ body {
 #playlistrow {
 	padding-bottom: 10px;
 }
+.navbar-fixed-top {
+	position: absolute !important;
+}
