@@ -40,6 +40,9 @@ body {
 #motd {
 	padding-top: 40px;
 }
-.nick-hover {
+.nick-hover, .nick-highlight {
 	background-color: rgba(0, 0, 0, 0.0);;
+}
+.nick-highlight {
+	font-weight: bold;
 }
