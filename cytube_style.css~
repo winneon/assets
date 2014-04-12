@@ -8,6 +8,7 @@ button#togglemotd {
 }
 #chatheader, #currenttitle, #userlist, #messagebuffer {
 	border: 0;
+	border-radius: 0px;
 }
 body {
 	font-family: 'Open Sans';
