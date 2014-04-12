@@ -14,6 +14,9 @@ div#motdwrap {
 #button-text {
 	padding-right: 7px;
 }
+#plcount {
+	font-weight: 700;
+}
 body {
 	font-family: 'Open Sans';
 	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat;
