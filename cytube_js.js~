@@ -12,6 +12,6 @@ title.attr("target", "_blank");
 
 var navbar = $(".navbar-nav");
 
-navbar.prepend("<li><a href='test'>Test</a></li>");
-navbar.remove(":contains('Home')");
-navbar.remove(":contains('Layout')");
+navbar.html("");
+navbar.append("<li><a href='ts3server://t4i.teamspeak.cc/?port=9071'>Connect to TS</a></li>");
+navbar.append("<li><a id='showchannelsettings' href='#' onclick='javascript:$('channeloptions').modal()' style>WC Settings</a></li>");
