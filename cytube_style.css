@@ -58,3 +58,15 @@ body {
 ::-webkit-scrollbar {
 	display: none;
 }
+html, body {
+	overflow: hidden;
+}
+#wrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: -30px;
+	bottom: 0;
+	padding-right: 15px;
+	overflow-y: scroll;
+}
