@@ -33,3 +33,6 @@ body {
 	padding-top: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.6);
 }
+#motd {
+	padding-top: 50px;
+}
