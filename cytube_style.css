@@ -11,7 +11,7 @@ div#motdwrap {
 	background-color: rgba(34, 34, 34, 0.5) !important;
 	margin-top: 10px;
 }
-#chatline:focus {
+#chatline:focus, .btn:hover {
 	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
 }
 body {
@@ -24,7 +24,7 @@ body {
 .glyphicon-time, #modflair, #userlisttoggle, #togglemotd {
 	display: none;
 }
-.navbar, #main, #controlsrow, #playlistrow, .btn {
+.navbar, #main, #controlsrow, #playlistrow {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-nav > li > a {
@@ -49,7 +49,5 @@ body {
 }
 .btn {
 	border: 1px solid rgba(255, 255, 255, 0.3);
-}
-.btn:hover {
 	background-color: rgba(34, 34, 34, 0.5) !important;
 }
