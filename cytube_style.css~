@@ -18,7 +18,7 @@ body {
 .glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd {
 	display: none;
 }
-.navbar, #main, #controlsrow, #playlistrow {
+.navbar, #main, #controlsrow, #playlistrow, #footer {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-nav > li > a {
@@ -60,4 +60,13 @@ body {
 }
 html, body {
 	overflow: hidden;
+}
+#wrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: -30px;
+	bottom: 0;
+	padding-right: 15px;
+	overflow-y: scroll;
 }

@@ -18,7 +18,7 @@ body {
 .glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd {
 	display: none;
 }
-.navbar, #main, #controlsrow, #playlistrow {
+.navbar, #main, #controlsrow, #playlistrow, #footer {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-nav > li > a {
@@ -69,4 +69,7 @@ html, body {
 	bottom: 0;
 	padding-right: 15px;
 	overflow-y: scroll;
+}
+.text-muted {
+	color: #cccccc;
 }
