@@ -29,7 +29,6 @@ body {
 }
 #main {
 	padding-top: 10px;
-	padding-bottom: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.6);
 }
 #motd {
@@ -56,9 +55,12 @@ body {
 .server-msg-reconnect, #currenttitle {
 	font-weight: 700;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar, #resizewrap {
 	display: none;
 }
 .text-muted {
 	color: #cccccc;
+}
+#playlistrow {
+	padding-bottom: 10px;
 }
