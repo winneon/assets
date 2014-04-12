@@ -18,6 +18,6 @@ body {
 .glyphicon-time {
 	display: none;
 }
-.form-control {
+#chatline {
 	border-radius: 0px;
 }
