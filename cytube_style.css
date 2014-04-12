@@ -52,4 +52,5 @@ body {
 	border: 0;
 	border-bottom: 1px dashed #009900;
 	font-weight: 700;
+	display: none;
 }

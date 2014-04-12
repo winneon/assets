@@ -38,7 +38,7 @@ body {
 	background-color: rgba(0, 0, 0, 0.0);;
 }
 .nick-highlight, #usercount {
-	font-weight: bold !important;
+	font-weight: 700 !important;
 }
 .btn {
 	background-color: rgba(34, 34, 34, 0.5) !important;
@@ -51,5 +51,5 @@ body {
 .server-msg-reconnect {
 	border: 0;
 	border-bottom: 1px dashed #009900;
-	font-weight: bold;
+	font-weight: 700;
 }
