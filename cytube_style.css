@@ -3,9 +3,12 @@ div#motdwrap {
 	border-radius: 0px;
 	background-color: rgba(0, 0, 0, 0.0);
 }
-#chatheader, #currenttitle, #userlist, #messagebuffer {
+#chatheader, #currenttitle, #userlist, #messagebuffer, #plmeta, #chatline {
 	border: 0;
 	border-radius: 0px;
+}
+#chatline {
+	background-color: rgba(34, 34, 34, 0.5) !important;
 }
 body {
 	font-family: 'Open Sans';
@@ -16,9 +19,6 @@ body {
 }
 .glyphicon-time, #modflair, #userlisttoggle, #togglemotd {
 	display: none;
-}
-#chatline {
-	border-radius: 0px;
 }
 .navbar, #main, #controlsrow, #playlistrow {
 	background: rgba(0, 0, 0, 0.5) !important;
