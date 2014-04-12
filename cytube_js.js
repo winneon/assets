@@ -9,3 +9,7 @@ var title = $(".navbar-brand");
 title.html("WC // Publix Cytube");
 title.attr("href", "http://www.ohsototes.com/");
 title.attr("target", "_blank");
+
+var navbar = $(".navbar-nav");
+
+navbar.prepend("<li><a href='test'>Test</a></li>");
