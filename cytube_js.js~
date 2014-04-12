@@ -1,3 +1,10 @@
+var css = document.createElement("link");
+
+css.type = "text/css";
+css.rel = "stylesheet";
+css.href = "http://winneonsword.net/cytube_style.css";
+$("head").append(css);
+
 var title = $(".navbar-brand");
 
 title.html("WC // Publix Cytube");
