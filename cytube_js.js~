@@ -1,6 +1,3 @@
-var js = document.createElement("script");
-
-
 var title = $(".navbar-brand");
 
 title.html("WC // Publix Cytube");
