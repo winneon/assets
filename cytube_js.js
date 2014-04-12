@@ -18,5 +18,5 @@ if (CLIENT.rank >= 255){
 	USEROPTS.modhat = true;
 }
 
-$(".navbar-fixed-top").removeClass(".navbar-fixed-top");
+$("nav").removeClass("navbar-fixed-top");
 $(".server-msg-reconnect").html("Connected to the Worlds Collide Publix Cytube!");
