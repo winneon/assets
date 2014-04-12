@@ -23,7 +23,7 @@ body {
 #chatline {
 	border-radius: 0px;
 }
-.navbar, #chatheader, #userlist, #messagebuffer {
+.navbar, #main {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-nav > li > a {
@@ -31,4 +31,7 @@ body {
 }
 .navbar-nav > li > a:hover {
 	background: rgba(0, 0, 0, 0.8) !important;
+}
+#main {
+	padding-top: 10px;
 }
