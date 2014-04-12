@@ -14,4 +14,4 @@ var navbar = $(".navbar-nav");
 
 navbar.html("");
 navbar.append("<li><a href='ts3server://t4i.teamspeak.cc/?port=9071'>Connect to TS</a></li>");
-navbar.append("<li><a id='showchannelsettings' href='#' onclick='javascript:$('channeloptions').modal()' style>Settings</a></li>");
+navbar.append("<li><a id='showchannelsettings' href='#' onclick='javascript:$(\"channeloptions\").modal()' style>Settings</a></li>");
