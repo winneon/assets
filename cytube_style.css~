@@ -15,9 +15,6 @@ body {
 	font-family: 'Open Sans';
 	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat;
 }
-.userlist_owner {
-	color: #04A304 !important;
-}
 .glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd {
 	display: none;
 }
@@ -50,4 +47,9 @@ body {
 .btn:hover, #chatline:hover, #chatline:focus {
 	background-color: rgba(65, 65, 65, 0.5) !important;
 	box-shadow: 0px 0px 0px black !important;
+}
+.server-msg-reconnect {
+	border: 0;
+	border-bottom: 1px dashed #009900;
+	font-weight: bold;
 }
