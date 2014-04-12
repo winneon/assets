@@ -51,5 +51,7 @@ body {
 .server-msg-reconnect {
 	border: 0;
 	border-bottom: 1px dashed #009900;
+}
+.server-msg.reconnect, #currenttitle {
 	font-weight: 700;
 }
