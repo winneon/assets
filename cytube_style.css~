@@ -33,6 +33,9 @@ body {
 .navbar-nav > li > a:hover {
 	background: rgba(0, 0, 0, 0.8) !important;
 }
+.navbar-brand {
+	content: "WC // Publix Cytube";
+}
 #main {
 	padding-top: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.6);
