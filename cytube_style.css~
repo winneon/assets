@@ -7,6 +7,9 @@ div#motdwrap {
 	border: 0;
 	border-radius: 0px;
 }
+#chatline {
+	background-color: rgba(34, 34, 34, 0.5) !important;
+}
 body {
 	font-family: 'Open Sans';
 	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat;
