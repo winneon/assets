@@ -13,4 +13,4 @@ navbar.append("<li><a id='showchansettings' href='#' onclick=\"javascript:$('#ch
 setVisible("#showchansettings", CLIENT.rank >= 2);
 
 $("#modflair").removeClass("label-default").addClass("label-success");
-$("#adminflair").removeClass("label-default").addClass("label-danger");
+//$("#adminflair").removeClass("label-default").addClass("label-danger");
