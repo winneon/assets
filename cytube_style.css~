@@ -29,6 +29,7 @@ body {
 }
 #main {
 	padding-top: 10px;
+	padding-botton: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.6);
 }
 #motd {
@@ -57,18 +58,6 @@ body {
 }
 ::-webkit-scrollbar {
 	display: none;
-}
-html, body {
-	overflow: hidden;
-}
-#wrap {
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: -30px;
-	bottom: 0;
-	padding-right: 15px;
-	overflow-y: scroll;
 }
 .text-muted {
 	color: #cccccc;
