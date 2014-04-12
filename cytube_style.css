@@ -1,7 +1,7 @@
 div#motdwrap {
 	border: 0;
 	border-radius: 0px;
-	background-color: rgba(0, 0, 0, 0.0);
+	background-color: none;
 }
 #chatheader, #currenttitle, #userlist, #messagebuffer, #plmeta, #chatline {
 	border: 0;
@@ -12,7 +12,7 @@ div#motdwrap {
 	margin-top: 10px;
 }
 #chatline:focus {
-	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
 }
 body {
 	font-family: 'Open Sans';
@@ -39,4 +39,7 @@ body {
 }
 #motd {
 	padding-top: 40px;
+}
+#nick-hover {
+	background-color: none;
 }

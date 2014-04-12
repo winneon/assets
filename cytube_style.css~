@@ -12,7 +12,7 @@ div#motdwrap {
 	margin-top: 10px;
 }
 #chatline:focus {
-	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
 }
 body {
 	font-family: 'Open Sans';
@@ -33,13 +33,13 @@ body {
 .navbar-nav > li > a:hover {
 	background: rgba(0, 0, 0, 0.8) !important;
 }
-.navbar-brand {
-	content: "WC // Publix Cytube";
-}
 #main {
 	padding-top: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.6);
 }
 #motd {
 	padding-top: 40px;
+}
+#nick-hover {
+	background-color: none;
 }
