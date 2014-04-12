@@ -26,4 +26,4 @@ if (CLIENT.rank >= 255){
 }
 
 $(".server-msg-reconnect").html("Connected to the Worlds Collide Publix Cytube!");
-$("#mediarefresh").prepend("Refresh Player");
+$("#mediarefresh").prepend("<span id='button-text'>Refresh Player</span>");
