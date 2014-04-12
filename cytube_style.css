@@ -15,9 +15,6 @@ body {
 	font-family: 'Open Sans';
 	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat;
 }
-.userlist_owner {
-	color: #04A304 !important;
-}
 .glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd {
 	display: none;
 }
