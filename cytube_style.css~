@@ -18,6 +18,3 @@ body {
 .glyphicon-time {
 	display: none;
 }
-.form_control {
-	border-radius: 0px;
-}
