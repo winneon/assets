@@ -43,11 +43,9 @@ body {
 .nick-hover, .nick-highlight {
 	background-color: rgba(0, 0, 0, 0.0);;
 }
-.nick-highlight {
+.nick-highlight, #usercount {
 	font-weight: bold !important;
-	color: yellow;
 }
 .btn {
-	border: 1px solid rgba(255, 255, 255, 0.3);
 	background-color: rgba(34, 34, 34, 0.5) !important;
 }
