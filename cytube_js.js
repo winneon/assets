@@ -1,3 +1,17 @@
+(function($){
+	$.fn.changeElementType = function(new){
+		var attrs = { };
+
+		$.each($(this[0].attributes, function(idx, attr)){
+			attrs[attr.nodeName] = attr.nodeValue;
+		}
+
+		this.replaceWith(function(){
+			return $("<" + new + "/>", attrs).append($(this).contents());
+		});
+	}
+})(jQuery);
+
 var css = document.createElement("link");
 
 css.type = "text/css";
@@ -27,3 +41,5 @@ if (CLIENT.rank >= 255){
 
 $(".server-msg-reconnect").html("Connected to the Worlds Collide Publix Cytube!");
 $("#mediarefresh").prepend("<span id='button-text'>Refresh Player</span>");
+
+$("#currenttitle").changeElementType("div");
