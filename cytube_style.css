@@ -43,13 +43,13 @@ body {
 .nick-highlight, #usercount {
 	font-weight: 700 !important;
 }
-.btn, #chatline, .form-control[type="text"] {
+.btn, #chatline, input.form-control[type="text"] {
 	background-color: rgba(34, 34, 34, 0.5) !important;
 	box-shadow: 0px 0px 0px black;
 	border: 0;
 	border-radius: 0px;
 }
-.btn:hover, #chatline:hover, #chatline:focus, .form-control[type="text"]:hover, .form-control[type="text"]:focus {
+.btn:hover, #chatline:hover, #chatline:focus, input.form-control[type="text"]:hover, input.form-control[type="text"]:focus {
 	background-color: rgba(65, 65, 65, 0.5) !important;
 	box-shadow: 0px 0px 0px black !important;
 	border: 0;
