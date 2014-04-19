@@ -91,8 +91,7 @@ input.form-control[type="text"]:focus,
 .nav-tabs > li > a:hover,
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus,
-.queue_active {
+.nav-tabs > li.active > a:focus {
 	background: rgba(65, 65, 65, 0.5) !important;
 	box-shadow: 0px 0px 0px black !important;
 	border: 0;
