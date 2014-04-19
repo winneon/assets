@@ -18,7 +18,7 @@ body {
 	font-family: 'Open Sans';
 	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat fixed;
 }
-.glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd, #footer {
+.glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd, #footer, ::-webkit-scrollbar, #resizewrap {
 	display: none;
 }
 .navbar, #main, #controlsrow, #playlistrow, #footer {
@@ -56,11 +56,14 @@ body {
 	border: 0;
 	border-bottom: 1px dashed #009900;
 }
+#currenttitle {
+	border: 0;
+	border-bottom: 1px dashed #C8C8C8;
+	margin: 5px;
+	padding: 5px;
+}
 .server-msg-reconnect, #currenttitle, #plcount, #pllength {
 	font-weight: 700;
-}
-::-webkit-scrollbar, #resizewrap {
-	display: none;
 }
 .text-muted {
 	color: #cccccc;
