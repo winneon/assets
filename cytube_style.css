@@ -3,7 +3,13 @@ div#motdwrap {
 	border-radius: 0px;
 	background-color: rgba(0, 0, 0, 0.0);
 }
-#chatheader, #currenttitle, #userlist, #messagebuffer, #plmeta, #chatline, .btn {
+#chatheader,
+#currenttitle,
+#userlist,
+#messagebuffer,
+#plmeta,
+#chatline,
+.btn {
 	border: 0;
 	border-radius: 0px;
 }
@@ -17,40 +23,67 @@ body {
 	font-family: 'Open Sans';
 	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat fixed;
 }
-.glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd, ::-webkit-scrollbar, #resizewrap, .close {
+.glyphicon-time,
+#modflair,
+#adminflair,
+#userlisttoggle,
+#togglemotd,
+::-webkit-scrollbar,
+#resizewrap,
+.close,
+#newpollbtn {
 	display: none;
 }
-.navbar, #main, #controlsrow, #playlistrow, #footer {
+.navbar,
+#main,
+#controlsrow,
+#playlistrow,
+#footer {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-nav > li > a {
 	border: 0 !important;
 }
-.navbar-nav > li > a:hover, .btn {
+.navbar-nav > li > a:hover,
+.btn {
 	background: rgba(0, 0, 0, 0.8) !important;
 }
 #motd {
 	padding-top: 40px;
 }
-.nick-hover, .nick-highlight {
+.nick-hover,
+.nick-highlight {
 	background-color: rgba(0, 0, 0, 0.0);;
 }
-.nick-highlight, #usercount {
+.nick-highlight,
+#usercount {
 	font-weight: 700 !important;
 }
-.btn, #chatline, input.form-control[type="text"], .nav-tabs > li > a {
+.btn, #chatline,
+input.form-control[type="text"],
+.nav-tabs > li > a {
 	background-color: rgba(34, 34, 34, 0.5) !important;
 	box-shadow: 0px 0px 0px black;
 	border: 0;
 	border-radius: 0px;
 }
-.btn:hover, #chatline:hover, #chatline:focus, input.form-control[type="text"]:hover, input.form-control[type="text"]:focus, .modal-content, .nav-tabs > li > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+.btn:hover,
+#chatline:hover,
+#chatline:focus,
+input.form-control[type="text"]:hover,
+input.form-control[type="text"]:focus,
+.modal-content,
+.nav-tabs > li > a:hover,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
 	background-color: rgba(65, 65, 65, 0.5) !important;
 	box-shadow: 0px 0px 0px black !important;
 	border: 0;
 	border-radius: 0px;
 }
-#main, .modal-content {
+#main,
+.modal-content {
 	padding-top: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.6);
 	border-bottom: 0;
@@ -65,7 +98,9 @@ body {
 	margin: 5px;
 	padding: 5px;
 }
-.server-msg-reconnect, #currenttitle, #plcount, #pllength {
+.server-msg-reconnect,
+#currenttitle,
+#plcount,#pllength {
 	font-weight: 700;
 }
 .text-muted {
