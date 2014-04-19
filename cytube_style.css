@@ -1,8 +1,10 @@
-div#motdwrap {
-	border: 0;
-	border-radius: 0px;
-	background-color: rgba(0, 0, 0, 0.0);
+div#motdwrap,
+.queue-entry {
+	border: 0 !important;
+	border-radius: 0px !important;
+	background-color: rgba(0, 0, 0, 0.0) !important;
 }
+
 #chatheader,
 #currenttitle,
 #userlist,
@@ -13,16 +15,20 @@ div#motdwrap {
 	border: 0;
 	border-radius: 0px;
 }
+
 #chatline {
 	margin-top: 10px;
 }
+
 #button-text {
 	padding-right: 7px;
 }
+
 body {
 	font-family: 'Open Sans';
 	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat fixed;
 }
+
 .glyphicon-time,
 #modflair,
 #adminflair,
@@ -34,6 +40,7 @@ body {
 #newpollbtn {
 	display: none;
 }
+
 .navbar,
 #main,
 #controlsrow,
@@ -41,32 +48,40 @@ body {
 #footer {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
+
 .navbar-nav > li > a {
 	border: 0 !important;
 }
+
 .navbar-nav > li > a:hover,
 .btn {
 	background: rgba(0, 0, 0, 0.8) !important;
 }
+
 #motd {
 	padding-top: 40px;
 }
+
 .nick-hover,
 .nick-highlight {
 	background-color: rgba(0, 0, 0, 0.0);;
 }
+
 .nick-highlight,
 #usercount {
 	font-weight: 700 !important;
 }
+
 .btn, #chatline,
 input.form-control[type="text"],
-.nav-tabs > li > a {
+.nav-tabs > li > a,
+.queue-entry:hover {
 	background-color: rgba(34, 34, 34, 0.5) !important;
 	box-shadow: 0px 0px 0px black;
 	border: 0;
 	border-radius: 0px;
 }
+
 .btn:hover,
 #chatline:hover,
 #chatline:focus,
@@ -76,18 +91,21 @@ input.form-control[type="text"]:focus,
 .nav-tabs > li > a:hover,
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
+.nav-tabs > li.active > a:focus,
+.queue-active {
 	background-color: rgba(65, 65, 65, 0.5) !important;
 	box-shadow: 0px 0px 0px black !important;
 	border: 0;
 	border-radius: 0px;
 }
+
 #main,
 .modal-content {
 	padding-top: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.6);
 	border-bottom: 0;
 }
+
 .server-msg-reconnect {
 	border: 0;
 	border-bottom: 1px dashed #009900;
@@ -103,15 +121,19 @@ input.form-control[type="text"]:focus,
 #plcount,#pllength {
 	font-weight: 700;
 }
+
 .text-muted {
 	color: #cccccc;
 }
+
 #playlistrow {
 	padding-bottom: 10px;
 }
+
 .navbar-fixed-top {
 	position: absolute !important;
 }
+
 .modal-content {
 	background-color: black !important;
 }
