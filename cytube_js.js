@@ -1,5 +1,5 @@
 (function($){
-	$.fn.changeElementType = function(new){
+	$.fn.changeElementType = function(newType){
 		var attrs = { };
 
 		$.each($(this[0].attributes, function(idx, attr)){
@@ -7,7 +7,7 @@
 		});
 
 		this.replaceWith(function(){
-			return $("<" + new + "/>", attrs).append($(this).contents());
+			return $("<" + newType + "/>", attrs).append($(this).contents());
 		});
 	}
 })(jQuery);
