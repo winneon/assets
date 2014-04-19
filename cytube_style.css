@@ -17,10 +17,10 @@ body {
 	font-family: 'Open Sans';
 	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat fixed;
 }
-.glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd, ::-webkit-scrollbar, #resizewrap {
+.glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd, ::-webkit-scrollbar, #resizewrap, .close {
 	display: none;
 }
-.navbar, #main, #controlsrow, #playlistrow, #footer, .modal-content {
+.navbar, #main, #controlsrow, #playlistrow, #footer {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-nav > li > a {
@@ -28,11 +28,6 @@ body {
 }
 .navbar-nav > li > a:hover, .btn {
 	background: rgba(0, 0, 0, 0.8) !important;
-}
-#main, .modal-content {
-	padding-top: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.6);
-	border-bottom: 0;
 }
 #motd {
 	padding-top: 40px;
@@ -54,6 +49,11 @@ body {
 	box-shadow: 0px 0px 0px black !important;
 	border: 0;
 	border-radius: 0px;
+}
+#main, .modal-content {
+	padding-top: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	border-bottom: 0;
 }
 .server-msg-reconnect {
 	border: 0;
