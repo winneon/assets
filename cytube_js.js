@@ -43,3 +43,8 @@ $(".server-msg-reconnect").html("Connected to the Worlds Collide Publix Cytube!"
 $("#mediarefresh").prepend("<span id='button-text'>Refresh Player</span>");
 
 $("#currenttitle").changeElementType("div");
+
+$("#showchansettings").click(function(){
+	$("body > :not(#channeloptions)").hide();
+	$("channeloptions").modal();
+});
