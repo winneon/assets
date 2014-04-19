@@ -46,5 +46,7 @@ $("#currenttitle").changeElementType("div");
 
 $("#showchansettings").click(function(){
 	$("body > :not(#channeloptions)").hide();
-	$("channeloptions").modal();
+});
+$(".close").click(function(){
+	$("body > :not(#channeloptions)").show();
 });
