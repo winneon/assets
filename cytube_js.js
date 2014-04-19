@@ -43,4 +43,4 @@ $(".server-msg-reconnect").html("Connected to the Worlds Collide Publix Cytube!"
 $("#mediarefresh").prepend("<span id='button-text'>Refresh Player</span>");
 
 $("#currenttitle").changeElementType("div");
-$(".credit").html("Copyright &copy; 2012-2014 Worlds Collide Network &#8226; Hosted on CyTu.be");
+$(".credit").html("Copyright &copy; 2012-2014 <a href='http://ohsototes.com'>Worlds Collide Network</a> &#8226; Hosted on <a href='http://cytu.be'>CyTu.be</a>");
