@@ -77,3 +77,6 @@ body {
 .navbar-fixed-top {
 	position: absolute !important;
 }
+.modal-content {
+	background-color: black !important;
+}
