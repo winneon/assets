@@ -4,7 +4,7 @@
 
 		$.each($(this[0].attributes, function(idx, attr)){
 			attrs[attr.nodeName] = attr.nodeValue;
-		}
+		});
 
 		this.replaceWith(function(){
 			return $("<" + new + "/>", attrs).append($(this).contents());
