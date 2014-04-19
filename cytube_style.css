@@ -1,5 +1,4 @@
-div#motdwrap,
-.queue_entry {
+div#motdwrap {
 	border: 0 !important;
 	border-radius: 0px !important;
 	background: rgba(0, 0, 0, 0.0) !important;
@@ -75,6 +74,7 @@ body {
 .btn, #chatline,
 input.form-control[type="text"],
 .nav-tabs > li > a,
+.queue_entry,
 .queue_entry:hover {
 	background: rgba(34, 34, 34, 0.5) !important;
 	box-shadow: 0px 0px 0px black;
