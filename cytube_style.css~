@@ -16,7 +16,7 @@ div#motdwrap {
 }
 body {
 	font-family: 'Open Sans';
-	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat;
+	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat fixed;
 }
 .glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd {
 	display: none;
