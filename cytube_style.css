@@ -1,0 +1,73 @@
+div#motdwrap {
+	border: 0;
+	border-radius: 0px;
+	background-color: rgba(0, 0, 0, 0.0);
+}
+#chatheader, #currenttitle, #userlist, #messagebuffer, #plmeta, #chatline, .btn {
+	border: 0;
+	border-radius: 0px;
+}
+#chatline {
+	background-color: rgba(34, 34, 34, 0.5) !important;
+	margin-top: 10px;
+}
+#button-text {
+	padding-right: 7px;
+}
+body {
+	font-family: 'Open Sans';
+	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat fixed;
+}
+.glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd, #footer {
+	display: none;
+}
+.navbar, #main, #controlsrow, #playlistrow, #footer {
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+.navbar-nav > li > a {
+	border: 0 !important;
+}
+.navbar-nav > li > a:hover, .btn {
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+#main {
+	padding-top: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	border-bottom: 0;
+}
+#motd {
+	padding-top: 40px;
+}
+.nick-hover, .nick-highlight {
+	background-color: rgba(0, 0, 0, 0.0);;
+}
+.nick-highlight, #usercount {
+	font-weight: 700 !important;
+}
+.btn {
+	background-color: rgba(34, 34, 34, 0.5) !important;
+	box-shadow: 0px 0px 0px black;
+}
+.btn:hover, #chatline:hover, #chatline:focus {
+	background-color: rgba(65, 65, 65, 0.5) !important;
+	box-shadow: 0px 0px 0px black !important;
+}
+.server-msg-reconnect {
+	border: 0;
+	border-bottom: 1px dashed #009900;
+}
+.server-msg-reconnect, #currenttitle, #plcount, #pllength {
+	font-weight: 700;
+}
+::-webkit-scrollbar, #resizewrap {
+	display: none;
+}
+.text-muted {
+	color: #cccccc;
+}
+#playlistrow {
+	padding-bottom: 10px;
+}
+.navbar-fixed-top {
+	position: absolute !important;
+}
