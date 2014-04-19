@@ -17,10 +17,10 @@ body {
 	font-family: 'Open Sans';
 	background: url('http://images.forwallpaper.com/files/images/7/71b7/71b763ca/256982/texture-wallpaper-black-squares-background.jpg') center no-repeat fixed;
 }
-.glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd, #footer, ::-webkit-scrollbar, #resizewrap {
+.glyphicon-time, #modflair, #adminflair, #userlisttoggle, #togglemotd, ::-webkit-scrollbar, #resizewrap {
 	display: none;
 }
-.navbar, #main, #controlsrow, #playlistrow, #footer {
+.navbar, #main, #controlsrow, #playlistrow, #footer, .modal-content {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-nav > li > a {
@@ -29,7 +29,7 @@ body {
 .navbar-nav > li > a:hover, .btn {
 	background: rgba(0, 0, 0, 0.8) !important;
 }
-#main {
+#main, .modal-content {
 	padding-top: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.6);
 	border-bottom: 0;
@@ -76,7 +76,4 @@ body {
 }
 .navbar-fixed-top {
 	position: absolute !important;
-}
-.modal-content {
-	background-color: rgba(0, 0, 0, 0.8) !important;
 }
