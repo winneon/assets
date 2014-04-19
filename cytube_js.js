@@ -9,7 +9,7 @@
 		this.replaceWith(function(){
 			return $("<" + newType + "/>", attrs).append($(this).contents());
 		});
-	}
+	};
 })(jQuery);
 
 var css = document.createElement("link");
