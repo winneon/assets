@@ -33,9 +33,7 @@ body {
 #adminflair,
 #userlisttoggle,
 #togglemotd,
-::-webkit-scrollbar,
 #resizewrap,
-.close,
 #newpollbtn {
 	display: none;
 }
