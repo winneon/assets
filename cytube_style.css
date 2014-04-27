@@ -38,6 +38,16 @@ body {
 	display: none;
 }
 
+button.close {
+	color: white !important;
+	opacity: 0.5 !important;
+}
+
+button.close:hover,
+button.close:focus {
+	opacity: 1.0 !important;
+}
+
 .navbar,
 #main,
 #controlsrow,
