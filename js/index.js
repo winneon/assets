@@ -27,5 +27,3 @@ title.hover(function(){
 }, function(){
 	title.html(title.attr("out"));
 });
-
-$("a[href='#projects']").animateScroll(".projects");
