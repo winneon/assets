@@ -1,3 +1,17 @@
+(function($){
+	$.fn.changeElementType = function(newType){
+		var attrs = { };
+
+		$.each(this[0].attributes, function(idx, attr){
+			attrs[attr.nodeName] = attr.nodeValue;
+		});
+
+		this.replaceWith(function(){
+			return $("<" + newType + "/>", attrs).append($(this).contents());
+		});
+	};
+})(jQuery);
+
 var css = document.createElement("link");
 
 css.type = "text/css";
@@ -27,3 +41,6 @@ if (CLIENT.rank >= 255){
 
 $(".server-msg-reconnect").html("Connected to the Worlds Collide Publix Cytube!");
 $("#mediarefresh").prepend("<span id='button-text'>Refresh Player</span>");
+
+$("#currenttitle").changeElementType("div");
+$(".credit").html("Copyright &copy; 2012-2014 <a href='http://ohsototes.com'>Worlds Collide Network</a> &#8226; Hosted on <a href='http://cytu.be'>CyTu.be</a>");
