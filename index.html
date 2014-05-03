@@ -1,65 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="favicon.ico" />
-		
 		<title>to its fullest</title>
-		
-		<!-- Detect if mobile browser -->
-		<script language="javascript" src="js/jquery.js"></script>
-		<script>
-			if ((screen.width < 1024) && (screen.height < 768)) { 
-				window.location.replace("http://blog.winneonsword.net");
-			}
-		</script>
-		
-		<!-- Font Awesome core CSS -->
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
-		
-		<!-- Styles for this web page -->
 		<link href="css/index.css" rel="stylesheet" />
-		
-		<!-- Open Sans font -->
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet" />
 	</head>
-	<body onload="onLoad();">
-		<div class="header">
-			<div class="main">
-				<div class="center">
-					<div id="title" onmouseover="onHover();" onmouseout="onLoad();"></div>
-					<div class="divider"></div>
-					<div class="subtitle">"Nobody important? Blimey, that's amazing. Do you know that in nine hundred years of time and space, I've never met anybody who wasn't important before." - The Doctor</div>
+	<body>
+		<div class="content">
+			<ul class="navi">
+				<li><a class="home">Home</a></li>
+				<li><a class="projects">Projects</a></li>
+				<li><a href="http://blog.winneonsword.net">Blog</a></li>
+				<li><a href="https://github.com/WinneonSword">GitHub</a></li>
+				<li><a href="http://twitter.com/WinneonSword">Twitter</a></li>
+			</ul>
+			<span id="top"></span>
+			<div class="header">
+				<div id="title" in="allons-y!" out="to its fullest"></div>
+				<div id="divider" class="divider"></div>
+				<div class="subtitle">"Nobody important? Blimey, that's amazing. Do you know that in nine hundred years of time and space, I've never met anybody who wasn't important before." <span>- The Doctor</span></div>
+			</div>
+			<div class="page">
+				<h1>About Me</h1>
+				<div class="para">
+					Hello there, and welcome to my wonderful masterpiece of a website! (Opinionated) This website is where all the magic happens, including actual magic, like ponies, and rainbows, and... stuff. Yeah. Just believe what I just said. (It may be true. *mindblown*) I am a software developer of many languages, including but not limited to, Java, Python, HTML/CSS, and JavaScript. I am involved in a few organizations, including the <a href="http://ohsototes.com">Worlds Collide Network</a>.
+				</div>
+				<h1 id="projects">Projects</h1>
+				<div class="para">
+					Testing
 				</div>
 			</div>
 		</div>
-		<div class="navi">
-			<span class="navi"><a class="navi" href="index.html">Home</a></span>
-			<span class="navi"><a class="navi" href="http://blog.winneonsword.net">Blog</a></span>
-			<span class="navi"><a class="navi" href="projects.html">Projects</a></span>
-			<span class="navi"><a class="navi" href="https://github.com/WinneonSword">GitHub</a></span>
-			<span class="navi"><a class="navi" href="http://twitter.com/WinneonSword">Twitter</a></span>
-		</div>
-		<script type="text/javascript">
-			function onLoad(){
-				
-				var id = document.getElementById("title");
-				var text = "to its fullest";
-				
-				id.innerHTML = text;
-				
-			}
-			
-			function onHover(){
-				
-				var id = document.getElementById("title");
-				var text = "scroll down";
-				
-				id.innerHTML = text;
-				
-			}
-		</script>
+		<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>
