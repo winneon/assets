@@ -25,7 +25,7 @@ div#motdwrap {
 
 body {
 	font-family: 'Open Sans';
-	background: url('images/bg.jpg') center no-repeat fixed;
+	background: url('../images/bg.jpg') center no-repeat fixed;
 }
 
 .glyphicon-time,
