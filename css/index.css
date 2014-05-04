@@ -27,6 +27,10 @@ h1 {
 	text-indent: 20px;
 }
 
+h1:first-child {
+	margin-top: 0px;
+}
+
 div.header {
 	margin: 50px auto;
 	margin-top: 110px;

@@ -32,14 +32,11 @@ title.hover(function(){
 });
 
 $(".project-title").after("<br />");
-
-$(document).ready(function(){
-	$("html").niceScroll({
-		styler: "fb",
-		cursorcolor: "#2D2D2D",
-		cursorborder: "0px solid black",
-		scrollspeed: "40",
-		cursoropacitymin: "1",
-		cursoropacitymax: "1"
-	});
+$("html").niceScroll({
+	styler: "fb",
+	cursorcolor: "#2D2D2D",
+	cursorborder: "0px solid black",
+	scrollspeed: "40",
+	cursoropacitymin: "1",
+	cursoropacitymax: "1"
 });
