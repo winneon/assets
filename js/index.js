@@ -31,7 +31,9 @@ title.hover(function(){
 	title.html(title.attr("out"));
 });
 
+$(".project-title").attr("target", "_blank");
 $(".project-title").after("<br />");
+
 $("html").niceScroll({
 	styler: "fb",
 	cursorcolor: "#2D2D2D",
@@ -40,3 +42,4 @@ $("html").niceScroll({
 	cursoropacitymin: "1",
 	cursoropacitymax: "1"
 });
+
