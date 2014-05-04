@@ -66,7 +66,7 @@ h1 {
 
 div.page {
 	width: 700px;
-	background: #DDDDDD;
+	background: #EBEBEB;
 	text-shadow: 0px 0px 0px black;
 	text-align: justify;
 	margin: 0 auto;
@@ -77,6 +77,14 @@ div.page {
 div.para {
 	text-indent: 20px;
 	padding: 0px 10px 0px 10px;
+}
+
+img#selfie {
+	width: 160px;
+	height: 160px;
+	float: left;
+	padding: 10px 20px 0px 20px;
+	border-radius: 100%;
 }
 
 ul.navi {
