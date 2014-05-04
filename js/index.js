@@ -31,8 +31,10 @@ title.hover(function(){
 	title.html(title.attr("out"));
 });
 
-$(".project-title").attr("target", "_blank");
-$(".project-title").after("<br />");
+var project_title = $("div.project > a:first-child");
+
+project_title.attr("target", "_blank");
+project_title.after("<br />");
 
 $("html").niceScroll({
 	styler: "fb",
@@ -42,4 +44,3 @@ $("html").niceScroll({
 	cursoropacitymin: "1",
 	cursoropacitymax: "1"
 });
-

@@ -143,15 +143,15 @@ div.project:first-child {
 	border: 1px solid #C2C2C2 !important;
 }
 
-div.odd {
+div.project:nth-child(odd) {
 	background: #DDDDDD;
 }
 
-div.even {
+div.project:nth-child(even) {
 	background: #CECECE;
 }
 
-a.project-title {
+div.project > a:first-child {
 	font-size: 32px;
 	font-weight: 800;
 	text-transform: uppercase;
