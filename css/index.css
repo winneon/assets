@@ -9,10 +9,6 @@ body {
 	font-size: 14px;
 }
 
-::-webkit-scrollbar {
-	display: none;
-}
-
 a, a:visited {
 	font-weight: 700;
 	color: inherit;
@@ -101,8 +97,6 @@ a.project-title {
 	font-size: 32px;
 	font-weight: 800;
 	text-transform: uppercase;
-	margin: 0;
-	display: block;
 }
 
 img.selfie {
@@ -168,6 +162,10 @@ a.github {
 a.github:hover {
 	background-color: #CBCBCB;
 	text-decoration: none;
+}
+
+div.nicescroll-rails:hover {
+	background-color: rgba(206, 208, 211, 0.5) !important;
 }
 
 @font-face {
