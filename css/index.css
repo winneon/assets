@@ -1,5 +1,6 @@
 body {
 	background: url("../images/bg-static.png"), url('../images/bg.png') no-repeat center center;
+	background-size: 6px 6px, cover;
 	background-attachment: fixed;
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
