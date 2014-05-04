@@ -31,9 +31,9 @@ title.hover(function(){
 	title.html(title.attr("out"));
 });
 
-var project_title = $("div.project > a:first-child");
+$("a").attr("target", "_blank");
 
-project_title.attr("target", "_blank");
+var project_title = $("div.project > a:first-child");
 project_title.after("<br />");
 
 $("html").niceScroll({

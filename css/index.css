@@ -58,7 +58,7 @@ div.footer {
 	font-size: 11px;
 }
 
-div.footer > span {
+div.footer > a, div.footer > span {
 	font-weight: 800;
 }
 
@@ -126,7 +126,7 @@ div.page {
 	margin: 0 auto;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	padding: 30px;
-	padding-bottom: 70px;
+	padding-bottom: 80px;
 }
 
 div.para {
