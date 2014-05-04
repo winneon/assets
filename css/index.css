@@ -9,6 +9,58 @@ body {
 	font-size: 14px;
 }
 
+ul.navi {
+	background-color: #2D2D2D;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin-left: -20px;
+}
+
+ul.navi > li {
+	padding-left: 5px;
+	padding-right: 5px;
+	display: inline;
+}
+
+ul.navi > li > a {
+	background-color: #5A5A5A;
+	border-radius: 5px;
+	padding: 10px 15px 10px 15px;
+	color: #DDDDDD;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 0px #000000;
+	text-decoration: none;
+}
+
+ul.navi > li > a:hover {
+	background-color: #696969;
+	text-decoration: none;
+}
+
+div.footer {
+	background-color: #2D2D2D;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: #DDDDDD;
+	padding: 10px;
+	margin-left: -10px;
+	font-size: 11px;
+}
+
+div.footer > span {
+	font-weight: 800;
+}
+
 a, a:visited {
 	font-weight: 700;
 	color: inherit;
@@ -73,6 +125,7 @@ div.page {
 	margin: 0 auto;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	padding: 30px;
+	padding-bottom: 70px;
 }
 
 div.para {
@@ -112,42 +165,6 @@ img.selfie {
 	-webkit-border-radius: 50%;
  	-moz-border-radius: 50%;
 	border: 5px solid white;
-}
-
-ul.navi {
-	background-color: #2D2D2D;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-	padding: 20px;
-	text-align: center;
-	list-style-type: none;
-	margin: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	margin-left: -20px;
-}
-
-ul.navi > li {
-	padding-left: 5px;
-	padding-right: 5px;
-	display: inline;
-}
-
-ul.navi > li > a {
-	background-color: #5A5A5A;
-	border-radius: 5px;
-	padding: 10px 15px 10px 15px;
-	color: #DDDDDD;
-	font-size: 11px;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-shadow: 0px 0px 0px #000000;
-	text-decoration: none;
-}
-
-ul.navi > li > a:hover {
-	background-color: #696969;
-	text-decoration: none;
 }
 
 a.github {
