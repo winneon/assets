@@ -22,6 +22,7 @@ function isValidImage(url){
 			return true;
 		}
 	});
+	alert("test");
 }
 
 var css = document.createElement("link");
