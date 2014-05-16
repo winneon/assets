@@ -13,7 +13,7 @@
 })(jQuery);
 
 function isValidImage(url){
-	$("img", {
+	$("<img>", {
 		src: url,
 		error: function(){
 			alert("whoops!");
