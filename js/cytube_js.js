@@ -48,4 +48,4 @@ $(".credit").html("Copyright &copy; 2012-2014 <a href='http://ohsototes.com'>Wor
 var width = ($(document).width() - 40) + "";
 var height = Math.floor(parseInt(width) * 9 / 16 + 1) + "";
 
-alert($("ytapiplayer").attr("style", "width: " + width + "px; height: " + height + "px;");
+console.log($("ytapiplayer").attr("style", "width: " + width + "px; height: " + height + "px;");
