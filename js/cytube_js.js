@@ -57,4 +57,4 @@ $("#mediarefresh").prepend("<span id='button-text'>Refresh Player</span>");
 $("#currenttitle").changeElementType("div");
 $(".credit").html("Copyright &copy; 2012-2014 <a href='http://ohsototes.com'>Worlds Collide Network</a> &#8226; Hosted on <a href='http://cytu.be'>CyTu.be</a>");
 
-isValidImage("http://google.com")
+isValidImage("http://google.com");
