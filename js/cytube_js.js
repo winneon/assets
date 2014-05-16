@@ -13,16 +13,15 @@
 })(jQuery);
 
 function isValidImage(url){
-	$("<img>", {
+	$("img", {
 		src: url,
 		error: function(){
-			return false;
+			alert("whoops!");
 		},
 		load: function(){
-			return true;
+			alert("yay!");
 		}
 	});
-	alert("test");
 }
 
 var css = document.createElement("link");
@@ -58,4 +57,4 @@ $("#mediarefresh").prepend("<span id='button-text'>Refresh Player</span>");
 $("#currenttitle").changeElementType("div");
 $(".credit").html("Copyright &copy; 2012-2014 <a href='http://ohsototes.com'>Worlds Collide Network</a> &#8226; Hosted on <a href='http://cytu.be'>CyTu.be</a>");
 
-console.log(isValidImage("http://google.com"));
+isValidImage("http://google.com")
