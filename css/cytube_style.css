@@ -34,7 +34,8 @@ body {
 #userlisttoggle,
 #togglemotd,
 #resizewrap,
-#newpollbtn {
+#newpollbtn,
+#chatwrap {
 	display: none;
 }
 
