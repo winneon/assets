@@ -48,7 +48,6 @@ div.center {
 	width: 100vw;
 	height: 100vh;
 	text-align: center;
-	opacity: 0;
 }
 
 div.center > div {
@@ -58,7 +57,7 @@ div.center > div {
 
 div.title {
 	position: relative;
-	top: 50px;
+	top: 95px;
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
 	width: 850px;
