@@ -67,7 +67,7 @@ div.title {
 
 div.subtitle {
 	position: relative;
-	bottom: 75px;
+	top: 30px;
 	opacity: 0;
 }
 

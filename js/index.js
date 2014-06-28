@@ -9,7 +9,7 @@ $(document).ready(function(){
 			top: "0px"
 		}, secs);
 		$("div.subtitle").animate({
-			bottom: "0px",
+			top: "0px",
 			opacity: 1
 		}, secs);
 		$("div.social").animate({
