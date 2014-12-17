@@ -106,9 +106,9 @@ div#list_surround {
 }
 
 div#list_surround:before {
-	content: "murasakiiame's \A animelist";
+	content: "MurasakiiAme's \A animelist";
 	position: absolute;
-	top: 150px;
+	top: 140px;
 	color: white;
 	text-indent: 25px;
 	text-align: center;
@@ -118,7 +118,7 @@ div#list_surround:before {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	line-height: 45px;
+	line-height: 60px;
 }
 
 td.status_not_selected,
