@@ -1,0 +1,227 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,700,800");
+
+table#mal_control_strip {
+	background: #2D2D2D;
+	position: fixed;
+	top: 0px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.20);
+	z-index: 100;
+}
+
+table#mal_control_strip a {
+	color: #CDCDCD;
+	text-decoration: none;
+}
+
+table#mal_control_strip a[href*="/profile/"] {
+	color: white;
+}
+
+table#mal_control_strip a:hover {
+	text-decoration: underline;
+}
+
+table#mal_control_strip tbody {
+	display: block;
+	padding: 5px 7px;
+}
+
+td#mal_cs_pic,
+td#mal_cs_listinfo,
+td#mal_cs_links {
+	border-right: 0px solid transparent;
+}
+
+td#mal_cs_powered {
+	display: none;
+}
+
+body {
+	background: url("http://i.imgur.com/XaKc1io.jpg") no-repeat top center fixed;
+	background-color: black;
+	font-family: "Raleway", sans-serif;
+}
+
+br {
+	display: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+textarea {
+	width: 95%;
+	font-family: "Raleway", monospace;
+	font-size: 13px;
+}
+
+a.animetitle {
+	padding-right: 5px;
+}
+
+small {
+	display: inline-block;
+	background-color: #2D2D2D;
+	border-radius: 2px;
+	padding: 2px 5px;
+	margin: 2px 0px;
+	color: white;
+	font-weight: 700;
+}
+
+div[style*="float: right;"] small {
+	background-color: transparent;
+	padding: 0px 5px;
+	margin: 0px;
+	color: inherit;
+	font-size: 0px;
+	text-transform: lowercase;
+}
+
+div[style*="float: right;"] small a,
+div[style*="float: right;"] a small {
+	font-size: 11px;
+}
+
+div[style*="float: right;"] small a[title="View More Information"] {
+	display: none;
+}
+
+td.borderRBL div {
+	display: none;
+}
+
+td.borderRBL br {
+	display: block;
+}
+
+div#list_surround {
+	border: 2px solid white;
+	border-radius: 2px;
+	opacity: 0.95;
+	width: 900px;
+	margin: 340px auto 50px auto;
+}
+
+div#list_surround:before {
+	content: "murasakiiame's \A animelist";
+	position: absolute;
+	top: 150px;
+	color: white;
+	padding-left: 1em;
+	text-indent: -1em;
+	white-space: pre-wrap;
+	font-size: 72px;
+	font-weight: 700;
+	left: 40%;
+	line-height: 45px;
+}
+
+td.status_not_selected,
+td.status_selected {
+	background-color: rgba(0, 0, 0, 0.25);
+	color: white;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+td.status_selected a,
+td.status_not_selected a {
+	display: inline-block;
+	padding: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+td.status_selected,
+td.status_not_selected:hover {
+	background-color: white;
+	color: black;
+}
+
+div.header_title,
+div#grand_totals,
+div#copyright {
+	background-color: white;
+	border-radius: 0px !important;
+	padding: 10px 15px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+td.table_header b,
+td.table_header strong {
+	font-weight: 400;
+}
+
+td.table_header,
+td.td1,
+td.td2,
+td.category_totals {
+	background-color: #EEEEEE;
+	/* vertical-align: top; */
+	border-radius: 0px !important;
+	padding: 8px 10px;
+	font-size: 13px;
+}
+
+td.table_header:first-child,
+td.td1:first-child,
+td.td2:first-child,
+td.category_totals {
+	border-left: 10px solid white;
+	border-left-width: 10px !important;
+}
+
+td.table_header:last-child,
+td.td1:last-child,
+td.td2:last-child,
+td.category_totals {
+	border-right: 10px solid white;
+	border-right-width: 10px !important;
+}
+
+td.table_header {
+	background-color: #CFCFCF;
+}
+
+td.table_header:first-child,
+td.td1:first-child:not(.borderRBL),
+td.td2:first-child:not(.borderRBL) {
+	text-align: right;
+}
+
+td.td2 {
+	background-color: #E6E6E6;
+}
+
+tr:hover [class^=td] {
+	background-color: #DDDDDD;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+td.td1:last-child span a,
+td.td2:last-child span a {
+	cursor: default;
+	pointer-events: none;
+}
+
+div#grand_totals {
+	text-align: center;
+}
+
+div#copyright {
+	padding-top: 0px;
+	margin-top: 0px !important;
+	font-size: 11px;
+}
+
+div#copyright:after {
+	display: block;
+	content: "This anime list style has been created / developed by /u/WinneonSword (@jesseabryan).";
+}
