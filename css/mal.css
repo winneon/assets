@@ -106,7 +106,7 @@ div#list_surround {
 }
 
 div#list_surround:before {
-	content: "winneon's\Aanimelist";
+	content: "winneon's \A animelist";
 	position: absolute;
 	top: 150px;
 	color: white;
