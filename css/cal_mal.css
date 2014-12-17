@@ -110,7 +110,7 @@ div#list_surround:before {
 	position: absolute;
 	top: 150px;
 	color: white;
-	text-indent: 40em;
+	text-indent: 25px;
 	text-align: center;
 	white-space: pre-wrap;
 	font-size: 72px;
