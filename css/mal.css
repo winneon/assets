@@ -209,10 +209,6 @@ td.td2 {
 	background-color: #E6E6E6;
 }
 
-tr {
-	display: block;
-}
-
 tr:hover[class^=td] {
 	background-color: #DDDDDD;
 	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
