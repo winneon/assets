@@ -85,11 +85,13 @@ div[style*="float: right;"] a small {
 	font-size: 11px;
 }
 
-td.borderRBL div {
+td.borderRBL div,
+span[id*="tagLinks"] {
 	display: none;
 }
 
-td.borderRBL br {
+td.borderRBL br,
+span[id*="tagRow"] {
 	display: block;
 }
 
@@ -199,12 +201,6 @@ tr:hover [class^=td] {
 	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-td.td1:last-child span a,
-td.td2:last-child span a {
-	cursor: default;
-	pointer-events: none;
 }
 
 div#grand_totals {
