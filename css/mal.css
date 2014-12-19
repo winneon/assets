@@ -174,7 +174,7 @@ td.category_totals {
 	border-left-width: 10px !important;
 }
 
-td.table_header:last-child,
+td.table_header:nth-child(5),
 td.td1:nth-child(5),
 td.td2:nth-child(5),
 td.category_totals {
