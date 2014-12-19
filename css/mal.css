@@ -157,6 +157,13 @@ div#copyright {
 	text-transform: uppercase;
 }
 
+div.header_title span:after {
+	content: "(Hover over an entry for comments)";
+	vertical-align: middle;
+	font-size: 0.7em;
+	margin-left: 5px;
+}
+
 td.table_header b,
 td.table_header strong {
 	font-weight: 400;
