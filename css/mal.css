@@ -195,6 +195,11 @@ td.td2:nth-child(6) {
 	margin-left: -450px;
 }
 
+td.td1:nth-child(2),
+td.td2:nth-child(2) {
+	width: 599px;
+}
+
 td.table_header {
 	background-color: #CFCFCF;
 }
@@ -213,7 +218,7 @@ td.td2 {
 	background-color: #E6E6E6;
 }
 
-tr:hover[class^=td] {
+tr:hover [class^="td"] {
 	background-color: #DDDDDD;
 	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
