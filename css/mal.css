@@ -235,7 +235,7 @@ td.td2 {
 }
 
 tr:hover [class^="td"] {
-	background-color: #DDDDDD;
+	background-color: #CDCDCD;
 	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
