@@ -182,7 +182,8 @@ td.category_totals {
 	border-right-width: 10px !important;
 }
 
-td.td1:nth-child(6) {
+td.td1:nth-child(6),
+td.td2:nth-child(6) {
 	visibility: hidden;
 	position: absolute;
 	left: 50%;
