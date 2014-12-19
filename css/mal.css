@@ -228,7 +228,8 @@ tr:hover [class^="td"] {
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-tr:hover td.td1:nth-of-type(6) {
+tr:hover td.td1:nth-of-type(6),
+tr:hover td.td2:nth-of-type(6) {
 	display: block;
 }
 
