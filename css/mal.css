@@ -117,7 +117,7 @@ div#list_surround:before {
 	line-height: 45px;
 }
 
-div#list_surround table {
+div#list_surround table:not(:first-child) {
 	background-color: white;
 }
 
