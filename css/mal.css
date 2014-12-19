@@ -187,7 +187,7 @@ td.category_totals {
 
 td.td1:nth-of-type(6),
 td.td2:nth-of-type(6) {
-	display: none;
+	visibility: hidden;
 	position: absolute;
 	margin-left: 10px;
 }
@@ -224,7 +224,7 @@ tr:hover [class^="td"] {
 
 tr:hover td.td1:nth-of-type(6),
 tr:hover td.td2:nth-of-type(6) {
-	display: block;
+	visibility: visible;
 }
 
 div#grand_totals {
