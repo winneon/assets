@@ -40,6 +40,8 @@ body {
 	background: url("http://i.imgur.com/Jz6vF6B.jpg") no-repeat top center fixed;
 	background-color: black;
 	font-family: "Raleway", sans-serif;
+	width: 1200px;
+	margin: 0 auto;
 }
 
 br {
