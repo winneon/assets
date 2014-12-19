@@ -192,7 +192,7 @@ td.td1:nth-of-type(6),
 td.td2:nth-of-type(6) {
 	opacity: 0;
 	position: absolute;
-	background-color: white;
+	background-color: white !important;
 	margin-left: 10px;
 }
 
