@@ -92,7 +92,7 @@ span[id*="tagLinks"] {
 
 td.borderRBL br,
 span[id*="tagRow"] {
-	display: block;
+	display: block !important;
 }
 
 div#list_surround {
