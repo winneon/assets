@@ -175,15 +175,28 @@ td.category_totals {
 }
 
 td.table_header:last-child,
-td.td1:last-child,
-td.td2:last-child,
+td.td1:nth-child(5),
+td.td2:nth-child(5),
 td.category_totals {
 	border-right: 10px solid white;
 	border-right-width: 10px !important;
 }
 
+td.td1:nth-child(6) {
+	display: block;
+	border-left: 10px solid white;
+	border-left-width: 10px !important;
+	border-right: 10px solid white;
+	border-right-width: 10px !important;
+	width: 860px;
+}
+
 td.table_header {
 	background-color: #CFCFCF;
+}
+
+td.table_header:nth-child(6) {
+	display: none;
 }
 
 td.table_header:first-child,
@@ -196,7 +209,11 @@ td.td2 {
 	background-color: #E6E6E6;
 }
 
-tr:hover [class^=td] {
+tr {
+	display: block;
+}
+
+tr:hover[class^=td] {
 	background-color: #DDDDDD;
 	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
