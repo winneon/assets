@@ -193,15 +193,14 @@ td.category_totals {
 
 td.td1:nth-of-type(6),
 td.td2:nth-of-type(6) {
-	visibility: hidden;
 	position: absolute;
 	left: 50%;
 	border-left: 10px solid white;
 	border-left-width: 10px !important;
 	border-right: 10px solid white;
 	border-right-width: 10px !important;
-	width: 860px;
-	margin-left: -450px;
+	width: 859px;
+	margin: 31px 0px 0px -450px;
 }
 
 td.td1:nth-of-type(2),
