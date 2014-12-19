@@ -71,6 +71,14 @@ small {
 	font-weight: 700;
 }
 
+div[style*="float: right;"] small {
+	background-color: transparent;
+	padding: 0px 5px;
+	margin: 0px;
+	color: inherit;
+	text-transform: lowercase;
+}
+
 div[style*="float: right;"] small a,
 div[style*="float: right;"] a small {
 	font-size: 11px;
