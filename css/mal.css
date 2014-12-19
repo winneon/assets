@@ -198,7 +198,7 @@ td.td2:nth-of-type(6) div[id*="tagChange"] {
 	display: none;
 }
 
-span[id*="tagRow"] {
+span[id*="tagRow"]:before {
 	content: "Comments:";
 	display: block;
 	font-size: 1.1em;
