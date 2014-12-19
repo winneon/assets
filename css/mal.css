@@ -71,7 +71,8 @@ small {
 	font-weight: 700;
 }
 
-div[style*="float: right;"] small {
+div[style*="float: right;"] small,
+td.borderRBL small {
 	background-color: transparent;
 	padding: 0px 5px;
 	margin: 0px;
