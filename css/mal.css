@@ -183,6 +183,7 @@ td.category_totals {
 }
 
 td.td1:nth-child(6) {
+	visibility: hidden;
 	position: absolute;
 	left: 50%;
 	border-left: 10px solid white;
@@ -190,7 +191,7 @@ td.td1:nth-child(6) {
 	border-right: 10px solid white;
 	border-right-width: 10px !important;
 	width: 860px;
-	margin-left: 430px;
+	margin-left: -450px;
 }
 
 td.table_header {
