@@ -6,6 +6,7 @@ table#mal_control_strip {
 	top: 0px;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.20);
 	z-index: 100;
+	width: 100vw;
 }
 
 table#mal_control_strip a {
