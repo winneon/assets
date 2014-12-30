@@ -7,10 +7,9 @@
 		<meta name="twitter:title" content="to its fullest" />
 		<meta name="twitter:description" content="Welcome to Jesse Bryan's personal website! I don't really know what to put here, so I'll just put that. Ciao!" />
 		<meta name="twitter:image" content="http://i.imgur.com/lI04stD.png" />
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800" />
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:300" />
 		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="/css/style.css" type="text/css" />
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="center">
@@ -22,19 +21,19 @@
 				</div>
 				<div class="animate-2">
 					<div class="subtitle">
-						Graphics designer, web developer, administrator of the <a href="http://ohsototes.com" target="_blank">Worlds Collide Network</a>, and relatively normal guy.
+						Web developer, graphics designer, casual VN player, obsessive redditor, anime nerd, and heavy iOS user and (learning) developer. I am extremely active on <a href="http://reddit.com/user/WinneonSword">reddit</a> and <a href="http://myanimelist.net/profile/Winneon">myanimelist</a>. You can also reach me with the below social media outlets, and also by mail. Credit for the background image goes to <a href="http://www.pixiv.net/member.php?id=2501902">Fom</a> on <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=32050158">pixiv</a>.
 					</div>
 					<div class="social">
-						<a class="github" href="http://github.com/WinneonSword" target="_blank">
+						<a class="github" href="http://github.com/WinneonSword">
 							<i class="fa fa-github"></i>
 						</a>
-						<a class="twitter" href="http://twitter.com/jesseabryan" target="_blank">
+						<a class="twitter" href="http://twitter.com/jesseabryan">
 							<i class="fa fa-twitter"></i>
 						</a>
-						<a class="facebook" href="http://facebook.com/jesse.bryan.779" target="_blank">
+						<a class="facebook" href="http://facebook.com/jesse.bryan.779">
 							<i class="fa fa-facebook"></i>
 						</a>
-						<a class="instagram" href="http://instagram.com/jesseabryan" target="_blank">
+						<a class="instagram" href="http://instagram.com/jesseabryan">
 							<i class="fa fa-instagram"></i>
 						</a>
 					</div>
@@ -42,5 +41,10 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("a:not([href*='mailto:'])").attr("target", "_blank");
+			});
+		</script>
 	</body>
 </html>

@@ -1,3 +1,5 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:300,700");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,7 +14,8 @@ html {
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
 	color: white;
 }
 
@@ -21,15 +24,15 @@ div {
 }
 
 h1 {
-	font-family: "Raleway", sans-serif;
-	font-weight: 300;
 	font-size: 56px;
+	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 35px;
 }
 
 a {
 	color: inherit;
+	font-weight: 700;
 	text-decoration: none;
 }
 
@@ -63,6 +66,10 @@ div.title {
 	margin: 20px auto;
 }
 
+div.subtitle {
+	width: 900px;
+}
+
 div.social {
 	margin: 20px 0px;
 	font-size: 32px;
@@ -88,13 +95,12 @@ div.social a:hover {
 
 a.contact {
 	display: inline-block;
-	color: white;
-	padding: 25px 55px;
 	border: 1px solid white;
 	border-radius: 2px;
-	font-family: "Raleway", sans-serif;
-	font-weight: 300;
+	color: white;
+	padding: 25px 55px;
 	font-size: 18px;
+	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	-webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
@@ -135,30 +141,37 @@ div.animate-2 {
 	from {
 		top: 95px;
 	}
+	
 	to {
 		top: 0px;
 	}
 }
+
 @-moz-keyframes anim-one {
 	from {
 		top: 95px;
 	}
+	
 	to {
 		top: 0px;
 	}
 }
+
 @-o-keyframes anim-one {
 	from {
 		top: 95px;
 	}
+	
 	to {
 		top: 0px;
 	}
 }
+
 @keyframes anim-one {
 	from {
 		top: 95px;
 	}
+	
 	to {
 		top: 0px;
 	}
@@ -169,36 +182,43 @@ div.animate-2 {
 		opacity: 0;
 		top: 30px;
 	}
+	
 	to {
 		opacity: 1;
 		top: 0px;
 	}
 }
+
 @-moz-keyframes anim-two {
 	from {
 		opacity: 0;
 		top: 30px;
 	}
+	
 	to {
 		opacity: 1;
 		top: 0px;
 	}
 }
+
 @-o-keyframes anim-two {
 	from {
 		opacity: 0;
 		top: 30px;
 	}
+	
 	to {
 		opacity: 1;
 		top: 0px;
 	}
 }
+
 @keyframes anim-two {
 	from {
 		opacity: 0;
 		top: 30px;
 	}
+	
 	to {
 		opacity: 1;
 		top: 0px;
