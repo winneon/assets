@@ -107,7 +107,7 @@ div#list_surround {
 div#list_surround:before {
 	content: "winneon's \A animelist";
 	position: absolute;
-	top: 150px;
+	top: 140px;
 	color: white;
 	padding-left: 1em;
 	text-indent: -1em;
@@ -116,6 +116,19 @@ div#list_surround:before {
 	font-weight: 700;
 	left: 40%;
 	line-height: 45px;
+}
+
+div#list_surround:after {
+	content: "Fall 2014 Anime of the Season: \A Shigatsu wa Kimi no Uso / Your Lie in April";
+	position: absolute;
+	top: 240px;
+	color: white;
+	padding-left: 1em;
+	text-indent: -1.5em;
+	white-space: pre-wrap;
+	font-size: 18px;
+	left: 43.5%;
+	line-height: 14px;
 }
 
 div#list_surround table:not(:first-of-type) {
