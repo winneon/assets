@@ -6,8 +6,8 @@
 
 html,
 body {
-	background: url("http://i.imgur.com/5M1GmJ6.jpg") no-repeat top center fixed;
-	color: white;
+	background-color: #F2F2F2;
+	color: #2D2D2D;
 	font-family: "Raleway", sans-serif;
 }
 
@@ -18,10 +18,15 @@ br {
 a {
 	color: inherit;
 	text-decoration: none;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
 }
 
 a:hover {
-	text-decoration: underline;
+	color: #BDBDBD;
 }
 
 table#mal_control_strip {
@@ -62,34 +67,9 @@ td#mal_cs_powered {
 }
 
 div#list_surround {
-	background-color: rgba(0, 0, 0, 0.55);
-	width: 1175px;
-	margin: 300px auto 0px auto;
+	width: 1380px;
+	margin: 55px auto 0px auto;
 	padding: 0px 15px 15px 15px;
-}
-
-div#list_surround:before,
-div#list_surround:after {
-	position: absolute;
-	width: 400px;
-	margin-left: -200px;
-	font-size: 5em;
-	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-}
-
-div#list_surround:before {
-	content: "descretum";
-	top: 125px;
-	left: 60%;
-	font-weight: 800;
-}
-
-div#list_surround:after {
-	content: "AN ANIME LIST";
-	top: 200px;
-	left: calc(60% + 50px);
-	font-size: 2em;
-	font-weight: 400;
 }
 
 div#list_surround * {
@@ -102,16 +82,16 @@ div.hide[id*="more"] {
 	display: inline-block;
 	width: 225px;
 	height: 325px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 div#list_surround > table:nth-of-type(1),
-div#list_surround > table[class*="header_"] + table,
-div#grand_totals,
-div#copyright {
+div#list_surround > table[class*="header_"] + table {
 	display: none;
 }
 
 div#list_surround > table[class*="header_"] {
+	vertical-align: top;
 	padding: 20px;
 	font-size: 3em;
 	font-weight: 800;
@@ -120,70 +100,78 @@ div#list_surround > table[class*="header_"] {
 }
 
 div#list_surround > table:not([class*="header_"]) {
+	background-color: white;
 	position: relative;
-	margin: 5px;
+	margin: 5px 5px 5px 230px;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(1),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(6),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(7),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(8),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(9) {
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(1) {
 	display: none;
 }
 
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(2),
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(3),
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(4),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(5) {
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(5),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(6),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(7),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(8),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(9) {
 	display: block;
-	background-color: rgba(0, 0, 0, 0.75);
-	position: absolute;
+	background-color: white;
+	width: 225px;
+	padding: 0px 7px 2px 7px;
+	text-align: left;
+	z-index: 1;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(2) {
-	bottom: 0px;
-	width: 100%;
-	padding: 5px 7px;
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(2),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(6),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(9) {
+	padding-bottom: 7px;
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(2),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(3),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(6) {
+	padding-top: 7px;
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(3),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(4),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(5),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(6),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(7),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(8),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(9) {
+	position: absolute;
+	font-size: 0.9em;
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(2),
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(6):hover {
+	border-bottom: 1px solid #C7CBCD;
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(2) div[style="float: right;"] {
+	display: none;
 }
 
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(2) a {
-	font-weight: 800;
+	font-size: 1.25em;
 }
 
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(2) small {
 	display: block;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(2) div[style="float: right;"],
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(5) > a[href="javascript:void(0);"] {
-	display: none;
-}
-
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(3),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(4),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(5) {
-	width: auto;
-	padding: 5px 7px;
-	font-size: smaller;
-}
-
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(4) {
-	left: 10px;
-}
-
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(3),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(5) {
-	right: 10px;
-}
-
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(3) {
-	top: 42px;
+	border-top: 1px solid #C7CBCD;
+	bottom: 102px;
 }
 
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(3):before {
 	content: "Rating: ";
-	font-weight: 700;
 }
 
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(3) a:after {
@@ -191,38 +179,60 @@ div#list_surround > table:not([class*="header_"]) td:nth-of-type(3) a:after {
 }
 
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(4) {
-	top: 10px;
+	bottom: 83px;
 }
 
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(4):before {
 	content: "Type: ";
-	font-weight: 700;
 }
 
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(5) {
-	top: 10px;
+	bottom: 64px;
 }
 
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(5):before {
 	content: "Episodes: ";
-	font-weight: 700;
 }
 
-div#list_surround > table:not([class*="header_"]) td.category_totals {
-	display: block;
-	position: absolute;
-	top: 0px;
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(6) {
+	font-size: small;
+	padding-left: 12px;
+	padding-right: 12px;
+	z-index: 0;
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(6) a:hover {
+	color: inherit;
+	cursor: default;
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(6):hover {
+	z-index: 2;
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(7) {
+	bottom: 45px;
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(7):before {
+	content: "Rated: ";
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(8) {
+	bottom: 26px;
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(8):before {
+	content: "Started On: ";
+}
+
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(9) {
 	bottom: 0px;
-	left: 40px;
-	white-space: pre-line;
+	padding-top: 2px;
 }
 
-div#list_surround > table:not([class*="header_"]) td.category_totals:before {
-	content: "Totals";
-	display: block;
-	margin-top: 40px;
-	font-size: 2em;
-	font-weight: 800;
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(9):before {
+	content: "Ended On: ";
 }
 
 div.hide[id*="more"] {
@@ -230,7 +240,7 @@ div.hide[id*="more"] {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 5px 0px 0px -230px;
+	margin: 5px 0px 0px -455px;
 }
 
 div.hide[id*="more"] * {
