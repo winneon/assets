@@ -76,7 +76,36 @@ div#list_surround * {
 	box-sizing: border-box;
 }
 
-div#list_surround > table:not([class*="header_"]),
+div#list_surround b,
+div#list_surround strong {
+	font-weight: 400;
+}
+
+div#list_surround > table:nth-of-type(1) {
+	width: 1370px;
+	margin-top: 70px;
+}
+
+div#list_surround > table:nth-of-type(1) td,
+div#list_surround > table[class*="header_"] + table td {
+	width: calc(1370px / 6);
+	text-transform: uppercase;
+}
+
+div#list_surround > table:nth-of-type(1) td a,
+div#list_surround > table[class*="header_"] + table td a {
+	display: block;
+	background-color: white;
+	border-left: 1px solid #C7CBCD;
+	padding: 10px 15px;
+}
+
+div#list_surround > table:nth-of-type(1) td:nth-of-type(1) a,
+div#list_surround > table[class*="header_"] + table td:nth-of-type(3) a {
+	border-left: 0px solid transparent;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)),
 div.hide[id*="more"] {
 	float: left;
 	display: inline-block;
@@ -84,19 +113,14 @@ div.hide[id*="more"] {
 	height: 325px;
 }
 
+div#list_surround > table:nth-of-type(1),
 div#list_surround > table:not([class*="header_"]),
 div.hide[id*="more"],
 div#list_surround > table:not([class*="header_"]) td.category_totals:after {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-div#list_surround > table:nth-of-type(1),
-div#list_surround > table[class*="header_"] + table {
-	display: none;
-}
-
 div#list_surround > table[class*="header_"] {
-	vertical-align: top;
 	padding: 20px;
 	font-size: 3em;
 	font-weight: 800;
@@ -104,25 +128,47 @@ div#list_surround > table[class*="header_"] {
 	text-transform: uppercase;
 }
 
-div#list_surround > table:not([class*="header_"]) {
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) {
+	display: block;
+	float: none;
+	width: 1370px;
+	height: inherit;
+	margin: 0px auto 15px auto;
+}
+
+div#list_surround > table[class*="header_"] + table td {
+	width: calc(1370px / 3);
+}
+
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(1),
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(2),
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(6),
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(7),
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(8),
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(9) {
+	display: none;
+}
+
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) {
 	background-color: white;
 	position: relative;
 	margin: 5px 5px 5px 230px;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(1) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(1):not(.table_header) {
 	display: none;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(2),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(3),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(4),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(5),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(6),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(7),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(8),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(9),
-div#list_surround > table:not([class*="header_"]) td.category_totals {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(4):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(5):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(8):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(9):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals {
 	display: block;
 	background-color: white;
 	width: 225px;
@@ -131,123 +177,123 @@ div#list_surround > table:not([class*="header_"]) td.category_totals {
 	z-index: 1;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(2),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(6),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(9) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(9):not(.table_header) {
 	padding-bottom: 7px;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(2),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(3),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(6) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header) {
 	padding-top: 7px;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(3),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(4),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(5),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(6),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(7),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(8),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(9) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(4):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(5):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(8):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(9):not(.table_header) {
 	position: absolute;
 	font-size: 0.9em;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(2),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(6):hover,
-div#list_surround > table:not([class*="header_"]) td.category_totals:before {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header):hover,
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals:before {
 	border-bottom: 1px solid #C7CBCD;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(2) div[style="float: right;"] {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) div[style="float: right;"] {
 	display: none;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(2) a {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) a {
 	font-size: 1.25em;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(2) small {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) small {
 	display: block;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(3) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header) {
 	border-top: 1px solid #C7CBCD;
 	bottom: 102px;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(3):before {
-	content: "Rating: ";
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header):before {
+	content: "Score: ";
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(3) a:after {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header) a:after {
 	content: "/10";
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(4) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(4):not(.table_header) {
 	bottom: 83px;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(4):before {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(4):not(.table_header):before {
 	content: "Type: ";
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(5) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(5):not(.table_header) {
 	bottom: 64px;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(5):before {
-	content: "Episodes: ";
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(5):not(.table_header):before {
+	content: "Progress: ";
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(6) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header) {
 	font-size: small;
 	padding-left: 12px;
 	padding-right: 12px;
 	z-index: 0;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(6) a:hover {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header) a:hover {
 	color: inherit;
 	cursor: default;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(6):hover {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header):hover {
 	z-index: 2;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(7) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header) {
 	bottom: 45px;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(7):before {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header):before {
 	content: "Rated: ";
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(8) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(8):not(.table_header) {
 	bottom: 26px;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(8):before {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(8):not(.table_header):before {
 	content: "Started On: ";
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(9) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(9):not(.table_header) {
 	bottom: 0px;
 	padding-top: 2px;
 }
 
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(9):before {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(9):not(.table_header):before {
 	content: "Ended On: ";
 }
 
-div#list_surround > table:not([class*="header_"]) td.category_totals,
-div#list_surround > table:not([class*="header_"]) td.category_totals:before {
-	display: block;
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals,
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals:before {
+	display: block !important;
 }
 
-div#list_surround > table:not([class*="header_"]) td.category_totals {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals {
 	margin-top: 18px;
 	padding: 7px;
 	font-size: 0.9em;
@@ -255,7 +301,7 @@ div#list_surround > table:not([class*="header_"]) td.category_totals {
 	white-space: pre-line;
 }
 
-div#list_surround > table:not([class*="header_"]) td.category_totals:before {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals:before {
 	content: "Totals";
 	position: absolute;
 	top: 0px;
@@ -266,7 +312,7 @@ div#list_surround > table:not([class*="header_"]) td.category_totals:before {
 	line-height: normal;
 }
 
-div#list_surround > table:not([class*="header_"]) td.category_totals:after {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals:after {
 	content: "";
 	background: url("http://i.imgur.com/ZkMV8VC.png") no-repeat;
 	position: absolute;
