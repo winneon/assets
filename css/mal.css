@@ -82,6 +82,11 @@ div.hide[id*="more"] {
 	display: inline-block;
 	width: 225px;
 	height: 325px;
+}
+
+div#list_surround > table:not([class*="header_"]),
+div.hide[id*="more"],
+div#list_surround > table:not([class*="header_"]) td.category_totals:after {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -116,7 +121,8 @@ div#list_surround > table:not([class*="header_"]) td:nth-of-type(5),
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(6),
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(7),
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(8),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(9) {
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(9),
+div#list_surround > table:not([class*="header_"]) td.category_totals {
 	display: block;
 	background-color: white;
 	width: 225px;
@@ -149,7 +155,8 @@ div#list_surround > table:not([class*="header_"]) td:nth-of-type(9) {
 }
 
 div#list_surround > table:not([class*="header_"]) td:nth-of-type(2),
-div#list_surround > table:not([class*="header_"]) td:nth-of-type(6):hover {
+div#list_surround > table:not([class*="header_"]) td:nth-of-type(6):hover,
+div#list_surround > table:not([class*="header_"]) td.category_totals:before {
 	border-bottom: 1px solid #C7CBCD;
 }
 
@@ -235,6 +242,41 @@ div#list_surround > table:not([class*="header_"]) td:nth-of-type(9):before {
 	content: "Ended On: ";
 }
 
+div#list_surround > table:not([class*="header_"]) td.category_totals,
+div#list_surround > table:not([class*="header_"]) td.category_totals:before {
+	display: block;
+}
+
+div#list_surround > table:not([class*="header_"]) td.category_totals {
+	margin-top: 18px;
+	padding: 7px;
+	font-size: 0.9em;
+	line-height: 20px;
+	white-space: pre-line;
+}
+
+div#list_surround > table:not([class*="header_"]) td.category_totals:before {
+	content: "Totals";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 7px;
+	font-size: 20px;
+	line-height: normal;
+}
+
+div#list_surround > table:not([class*="header_"]) td.category_totals:after {
+	content: "";
+	background: url("http://i.imgur.com/ZkMV8VC.png") no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 225px;
+	height: 325px;
+	margin-left: -225px;
+}
+
 div.hide[id*="more"] {
 	display: block !important;
 	background-position: center center;
@@ -246,3 +288,4 @@ div.hide[id*="more"] {
 div.hide[id*="more"] * {
 	display: none;
 }
+
