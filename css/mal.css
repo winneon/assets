@@ -102,6 +102,9 @@ div#list_surround > table[class*="header_"] + table td a {
 	background-color: white;
 	border-left: 1px solid #C7CBCD;
 	padding: 10px 15px;
+}
+
+div#list_surround > table[class*="header_"] + table td a {
 	font-size: 0px;
 }
 
