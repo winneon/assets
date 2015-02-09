@@ -105,6 +105,7 @@ div#list_surround > table[class*="header_"] + table td a {
 	font-size: 0px;
 }
 
+div#list_surround > table[class*="header_"] + table td:nth-of-type(4),
 div#list_surround > table[class*="header_"] + table td a:before {
 	font-size: 16px;
 }
