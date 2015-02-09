@@ -323,6 +323,19 @@ div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.catego
 	margin-left: -225px;
 }
 
+a.animetitle:after {
+	display: block;
+	font-size: 12.8px;
+}
+
+a.animetitle[href*="/anime/9756/"]:after {
+	content: "Favourite Anime";
+}
+
+a.animetitle[href*="/anime/11981/"]:after {
+	content: "Favourite Movie";
+}
+
 div.hide[id*="more"] {
 	display: block !important;
 	background-position: center center;
