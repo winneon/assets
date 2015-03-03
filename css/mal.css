@@ -219,13 +219,13 @@ div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.catego
 	border-bottom: 1px solid #C7CBCD;
 }
 
-div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(1):not(.table_header) {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(1):not(.table_header):not(.category_totals) {
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
 	width: auto;
 	padding: 7px;
-	font-size: 0.9;
+	font-size: 0.9em;
 	z-index: 200;
 }
 
