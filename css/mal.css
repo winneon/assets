@@ -355,8 +355,8 @@ a.animetitle[href*="/anime/9756/"]:after {
 	content: "Favourite Anime";
 }
 
-a.animetitle[href*="/anime/11981/"]:after {
-	content: "Favourite Movie";
+a.animetitle[href*="/anime/32/"]:after {
+	content: "Favourite Movie (of all time)";
 }
 
 div.hide[id*="more"] {
