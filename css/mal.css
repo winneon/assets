@@ -359,6 +359,10 @@ a.animetitle[href*="/anime/32/"]:after {
 	content: "Favourite Movie (of all time)";
 }
 
+a.animetitle[href*="/anime/23273/"]:after {
+	content: "Fall 2014 Anime of the Season";
+}
+
 div.hide[id*="more"] {
 	display: block !important;
 	background-position: center center;
