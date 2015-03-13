@@ -237,8 +237,10 @@ div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of
 	font-size: 1.25em;
 }
 
-div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) small {
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) small,
+a.animetitle:after {
 	display: block;
+	font-size: 12.8px;
 }
 
 div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header) {
@@ -344,11 +346,6 @@ div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.catego
 	width: 225px;
 	height: 325px;
 	margin-left: -225px;
-}
-
-a.animetitle:after {
-	display: block;
-	font-size: 12.8px;
 }
 
 a.animetitle[href*="/anime/9756/"]:after {
