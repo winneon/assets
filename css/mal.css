@@ -366,6 +366,7 @@ div#grand_totals {
 
 div#copyright {
 	top: 16px;
+	margin-top: 0px !important;
 	font-size: 0px;
 }
 
