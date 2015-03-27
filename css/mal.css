@@ -356,6 +356,7 @@ div#copyright {
 	color: #CDCDCD;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
+	font-variant: normal;
 	z-index: 100;
 }
 
