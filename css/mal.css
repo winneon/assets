@@ -348,6 +348,32 @@ div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.catego
 	margin-left: -225px;
 }
 
+div#grand_totals,
+div#copyright {
+	position: fixed;
+	right: 0px;
+	padding: 10px 18px;
+	color: #CDCDCD;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	z-index: 100;
+}
+
+div#grand_totals {
+	top: 0px;
+	font-size: 11px;
+}
+
+div#copyright {
+	top: 16px;
+	font-size: 0px;
+}
+
+div#copyright:after {
+	content: "CSS style developed and designed by Winneon (@jesseabryan).";
+	font-size: 11px;
+}
+
 a.animetitle[href*="/anime/9756/"]:after {
 	content: "Favourite Anime";
 }
