@@ -93,11 +93,12 @@ div.social a:hover {
 	border: 0;
 }
 
-a.contact {
+a.button {
 	display: inline-block;
 	border: 1px solid white;
 	border-radius: 2px;
 	color: white;
+	margin: 0px 10px;
 	padding: 25px 55px;
 	font-size: 18px;
 	font-weight: 300;
@@ -109,7 +110,7 @@ a.contact {
 	transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
-a.contact:hover {
+a.button:hover {
 	background-color: white;
 	color: #2D2D2D;
 }
