@@ -229,10 +229,6 @@ div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of
 	z-index: 200;
 }
 
-div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) div[style="float: right;"] {
-	display: none;
-}
-
 div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) a {
 	font-size: 1.25em;
 }
@@ -241,6 +237,17 @@ div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of
 a.animetitle:after {
 	display: block;
 	font-size: 12.8px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) div[style="float: right;"] small {
+	font-size: 0px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) div[style="float: right;"] > small > a:first-child {
+	position: absolute;
+	right: 7px;
+	font-size: 12.8px;
+	text-transform: lowercase;
 }
 
 div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header) {
