@@ -385,6 +385,21 @@ div#copyright:after {
 	font-size: 11px;
 }
 
+div#fancybox-outer {
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+div#fancybox-outer {
+	top: 0px !important;
+	left: 0px !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+div.fancy-bg {
+	display: none;
+}
+
 a.animetitle[href*="/anime/9756/"]:after {
 	content: "Favourite Anime";
 }
