@@ -389,7 +389,7 @@ div#fancybox-outer {
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
-div#fancybox-outer {
+div#fancybox-inner {
 	top: 0px !important;
 	left: 0px !important;
 	width: 100% !important;
