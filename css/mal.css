@@ -445,4 +445,8 @@ a.animetitle[href*="/anime/27989/"]:after {
 	div#list_surround > table:nth-of-type(1) {
 		font-size: .75rem;
 	}
+
+	div#list_surround > table[class*="header_"] + table td {
+		width: calc(910px / 3);
+	}
 }
