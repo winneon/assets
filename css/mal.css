@@ -72,18 +72,6 @@ div#list_surround {
 	padding: 0px 15px 15px 15px;
 }
 
-@media (max-width: 1410px){
-	div#list_surround {
-		width: 920px;
-	}
-}
-
-@media (max-width: 950px){
-	div#list_surround {
-		width: 460px;
-	}
-}
-
 div#list_surround * {
 	box-sizing: border-box;
 }
@@ -442,4 +430,19 @@ a.animetitle[href*="/anime/26165/"]:after {
 
 a.animetitle[href*="/anime/27989/"]:after {
 	content: "Spring 2015 Anime of the Season";
+}
+
+@media (max-width: 1410px){
+	div#list_surround {
+		width: 920px;
+	}
+
+	div#list_surround > table:nth-of-type(1),
+	div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) {
+		width: 910px;
+	}
+
+	div#list_surround > table:nth-of-type(1) {
+		font-size: .75rem;
+	}
 }
