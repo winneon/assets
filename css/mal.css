@@ -185,7 +185,7 @@ div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.catego
 	display: block;
 	background-color: white;
 	width: 225px;
-	padding: 0px 7px 2px 7px;
+	padding: 1px 7px 2px;
 	text-align: left;
 	z-index: 1;
 }
