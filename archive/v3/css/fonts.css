@@ -1,0 +1,65 @@
+/*************************************************/
+/**  _____ ___  _   _ _____    ____ ____ ____   **/
+/** |  ___/ _ \| \ | |_   _|  / ___/ ___/ ___|  **/
+/** | |_ | | | |  \| | | |   | |   \___ \___ \  **/
+/** |  _|| |_| | |\  | | |   | |___ ___) |__) | **/
+/** |_|   \___/|_| \_| |_|    \____|____/____/  **/
+/**                                             **/
+/*************************************************/
+
+/* Fabfelt Script. Source: http://fabiendespinoy.free.fr/typo-fabfelt.html */
+@font-face {
+	font-family: "Fabfelt Script Bold";
+	src: url("../font/fabfelt-script/fabfeltscript-bold.eot");
+	src: url("../font/fabfelt-script/fabfeltscript-bold.eot?#iefix") format("embedded-opentype"),
+		 url("../font/fabfelt-script/fabfeltscript-bold.woff2") format("woff2"),
+		 url("../font/fabfelt-script/fabfeltscript-bold.woff") format("woff"),
+		 url("../font/fabfelt-script/fabfeltscript-bold.ttf") format("truetype"),
+		 url("../font/fabfelt-script/fabfeltscript-bold.svg#fabfeltscriptbold") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Reckoner. Source: http://alexdale.co/reckoner.html */
+@font-face {
+	font-family: "Reckoner";
+	src: url("../font/reckoner/Reckoner.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Reckoner";
+	src: url("../font/reckoner/Reckoner_Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Amaranth. Source: Google Fonts */
+@font-face {
+	font-family: "Amaranth";
+	src: url("../font/amaranth/Amaranth-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Amaranth";
+	src: url("../font/amaranth/Amaranth-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Amaranth";
+	src: url("../font/amaranth/Amaranth-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Amaranth";
+	src: url("../font/amaranth/Amaranth-BoldItalic.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}

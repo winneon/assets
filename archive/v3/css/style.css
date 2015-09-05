@@ -1,0 +1,290 @@
+/***********************************************************************/
+/**   ____ _____ _   _ _____ ____      _    _        ____ ____ ____   **/
+/**  / ___| ____| \ | | ____|  _ \    / \  | |      / ___/ ___/ ___|  **/
+/** | |  _|  _| |  \| |  _| | |_) |  / _ \ | |     | |   \___ \___ \  **/
+/** | |_| | |___| |\  | |___|  _ <  / ___ \| |___  | |___ ___) |__) | **/
+/**  \____|_____|_| \_|_____|_| \_\/_/   \_\_____|  \____|____/____/  **/
+/**                                                                   **/
+/***********************************************************************/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: inherit;
+	font-size: inherit;
+	text-indent: 0px;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Fabfelt Script Bold";
+	font-weight: 400;
+	text-align: center;
+}
+
+h1 {
+	font-size: 8rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+span.div {
+	display: block;
+	position: relative;
+	background-image: linear-gradient(90deg, #EAEAEA, #EAEAEA 42%, transparent 42%, transparent 58%, #EAEAEA 58%, #EAEAEA);
+	width: 600px;
+	height: 1px;
+	margin: 50px auto;
+}
+
+span.div:before {
+	content: "\F04D";
+	position: absolute;
+	width: 100%;
+	color: #EAEAEA;
+	font: normal normal normal 14px / 1 FontAwesome;
+	font-size: 1.25rem;
+	height: 1.25rem;
+	top: -0.625rem;
+	text-align: center;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+nav {
+	background-color: white;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	color: black;
+	font-family: "Reckoner";
+	font-size: 2rem;
+	opacity: 0;
+	z-index: 2;
+}
+
+nav ul.navbar {
+	position: relative;
+	margin: 0px auto;
+	width: 800px;
+	font-size: 0px;
+	text-align: right;
+	list-style-type: none;
+}
+
+nav ul.navbar > li {
+	display: inline-block;
+	font-size: 2rem;
+}
+
+nav ul.navbar > li > a {
+	display: inline-block;
+	border-bottom: 5px solid transparent;
+	padding: 15px 15px 10px 15px;
+}
+
+nav ul.navbar > li > a:hover {
+	border-color: black;
+}
+
+nav ul.navbar > li.title {
+	position: absolute;
+	left: 0px;
+	padding: 15px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+header {
+	display: table;
+	background: url("../img/background.jpg") no-repeat center center fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	color: white;
+}
+
+header div.top {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+header div.top > div {
+	position: relative;
+	width: 800px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+header div.top > div h1 {
+	font-size: 12rem;
+	line-height: 12rem;
+	letter-spacing: -5px;
+}
+
+header div.top > div span.div {
+	background-image: linear-gradient(90deg, white, white 42%, transparent 42%, transparent 58%, white 58%, white);
+	width: 700px;
+	margin: 0px auto;
+}
+
+header div.top > div span.div:before {
+	display: none;
+}
+
+header div.top > div div.scroll {
+	position: absolute;
+	bottom: -175px;
+	width: 100%;
+	font-size: 3rem;
+}
+
+header div.top > div div.scroll > div {
+	width: 125px;
+	margin: 0px auto;
+	cursor: pointer;
+}
+
+header div.top > div div.scroll > div span {
+	display: block;
+	font-family: "Reckoner";
+}
+
+header div.top > div div.scroll > div i {
+	line-height: 2rem;
+}
+
+div.scroll_btns {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 30px;
+	height: 30px;
+	color: black;
+	font-size: 3rem;
+	line-height: 3rem;
+	opacity: 0;
+	cursor: pointer;
+}
+
+div.page {
+	box-sizing: border-box;
+	width: 800px;
+	margin: 0px auto;
+	padding: 50px;
+	font-family: "Amaranth";
+	font-size: 1.25rem;
+}
+
+div.page *:first-child {
+	margin-top: 0px;
+}
+
+div.page *:last-child {
+	margin-bottom: 0px;
+}
+
+div.page a {
+	display: inline-block;
+	color: #D64040;
+	border-bottom: 1px solid transparent;
+	-webkit-transition: .2s all ease;
+	-moz-transition: .2s all ease;
+	-ms-transition: .2s all ease;
+	-o-transition: .2s all ease;
+	transition: .2s all ease;
+}
+
+div.page a:hover {
+	border-color: #FFBABA;
+	color: #FFBABA;
+	-webkit-transform: translateY(-3px);
+	-moz-transform: translateY(-3px);
+	-ms-transform: translateY(-3px);
+	-o-transform: translateY(-3px);
+	transform: translateY(-3px);
+}
+
+div.page p {
+	margin-top: 1rem;
+	text-indent: 20px;
+}
+
+div.page ul {
+	margin: 1rem 0px;
+	padding-left: 70px;
+}
+
+div.page blockquote {
+	position: relative;
+	background-color: #F9F9F9;
+	border-left: 10px solid #CCCCCC;
+	margin: 20px 0px;
+	padding: 25px 35px;
+	color: #A0A0A0;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+
+div.page blockquote.quote {
+	padding-bottom: 60px;
+}
+
+div.page blockquote.quote:before,
+div.page blockquote.quote:after {
+	padding: 0px 10px;
+	font-weight: 700;
+}
+
+div.page blockquote.quote:before {
+	content: "\201C";
+	vertical-align: top;
+}
+
+div.page blockquote.quote:after {
+	content: "\201D";
+	vertical-align: bottom;
+}
+
+div.page blockquote.quote span {
+	position: absolute;
+	right: 35px;
+	bottom: 25px;
+	color: #CCCCCC;
+}
+
+div.page blockquote.quote span:before {
+	content: "\2014  ";
+}
+
+div.page blockquote.main {
+	margin-bottom: 50px;
+}
+
+div.page blockquote p {
+	display: inline-block;
+	width: 85%;
+	text-indent: 0px;
+}
+
+div.page p.copyright {
+	color: #CCCCCC;
+	font-size: 1rem;
+	text-align: center;
+}
