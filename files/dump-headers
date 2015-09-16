@@ -31,7 +31,7 @@ then
 				do
 					base="$(basename $file)"
 					if [[ -f "$file" && ! "$base" =~ "." ]]
-					do
+					then
 						echo -e "Dumping $base."
 						class-dump -H "$file" -o "$base"
 					fi
