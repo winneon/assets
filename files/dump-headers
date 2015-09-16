@@ -1,0 +1,47 @@
+#!/bin/bash
+
+orig=""
+
+function sig(){
+	[[ -d "$orig" ]] && cd "$orig"
+	exit 0;
+}
+
+trap sig SIGINT
+
+if [[ -n "$1" ]]
+then
+	[[ ! -d "$HOME/headers" ]] && mkdir $HOME/headers
+
+	if [[ -d "$1" ]]
+	then
+		orig="$(dirname ${BASH_SOURCE[0]})"
+
+		cd "$1"
+		path="$(basename $(pwd))"
+
+		cd "$HOME/headers"
+
+		if [[ "$path" == "Frameworks" || "$path" == "PrivateFrameworks" ]]
+		then
+			for dir in "$1"*/
+			do
+				dir=${dir:0:${#dir} - 1}
+				for file in "$dir"/*
+				do
+					base="$(basename $file)"
+					[[ -f "$file" && ! "$base" =~ "." ]] && class-dump -H "$file" -o "$base"
+				done
+			done
+		else
+			echo -e "dump-headers: $1 is not a Frameworks or PrivateFrameworks directory."
+		fi
+
+		cd "$orig"
+	else
+		echo -e "dump-headers: $1 is not a directory."
+	fi
+else
+	echo -e "Usage: ./dump-headers <dir>"
+	echo -e "\tNote: <dir> must be a Frameworks or PrivateFrameworks directory."
+fi
