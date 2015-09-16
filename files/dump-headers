@@ -30,7 +30,11 @@ then
 				for file in "$dir"/*
 				do
 					base="$(basename $file)"
-					[[ -f "$file" && ! "$base" =~ "." ]] && class-dump -H "$file" -o "$base"
+					if [[ -f "$file" && ! "$base" =~ "." ]]
+					do
+						echo -e "Dumping $base."
+						class-dump -H "$file" -o "$base"
+					fi
 				done
 			done
 		else
