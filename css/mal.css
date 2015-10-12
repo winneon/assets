@@ -409,30 +409,6 @@ div.hide[id*="more"] * {
 	display: none;
 }
 
-a.animetitle[href*="/anime/9756/"]:after {
-	content: "Favourite Anime";
-}
-
-a.animetitle[href*="/anime/32/"]:after {
-	content: "Favourite Movie (of all time)";
-}
-
-a.animetitle[href*="/anime/10165/"]:after {
-	content: "First Anime";
-}
-
-a.animetitle[href*="/anime/23273/"]:after {
-	content: "Fall 2014 Anime of the Season";
-}
-
-a.animetitle[href*="/anime/26165/"]:after {
-	content: "Winter 2015 Anime of the Season";
-}
-
-a.animetitle[href*="/anime/27989/"]:after {
-	content: "Spring 2015 Anime of the Season";
-}
-
 @media (max-width: 1410px){
 	div#list_surround {
 		width: 920px;
