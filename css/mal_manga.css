@@ -1,0 +1,430 @@
+/* Raleway font family import */
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,700,800");
+
+html,
+body {
+	background-color: #F2F2F2;
+	color: #2D2D2D;
+	font-family: "Raleway", sans-serif;
+}
+
+br {
+	display: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+a:hover {
+	color: #BDBDBD;
+}
+
+table#mal_control_strip {
+	background: #2D2D2D;
+	position: fixed;
+	top: 0px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.20);
+	z-index: 100;
+	width: 100vw;
+}
+
+table#mal_control_strip a {
+	color: #CDCDCD;
+	text-decoration: none;
+}
+
+table#mal_control_strip a[href*="/profile/"] {
+	color: white;
+}
+
+table#mal_control_strip a:hover {
+	text-decoration: underline;
+}
+
+table#mal_control_strip tbody {
+	display: block;
+	padding: 5px 7px;
+}
+
+td#mal_cs_pic,
+td#mal_cs_listinfo,
+td#mal_cs_links {
+	border-right: 0px solid transparent;
+}
+
+td#mal_cs_powered {
+	display: none;
+}
+
+div#list_surround {
+	width: 1380px;
+	margin: 55px auto 0px auto;
+	padding: 0px 15px 15px 15px;
+}
+
+div#list_surround * {
+	box-sizing: border-box;
+}
+
+div#list_surround b,
+div#list_surround strong {
+	font-weight: 400;
+}
+
+div#list_surround > table:nth-of-type(1) {
+	width: 1370px;
+	margin-top: 70px;
+}
+
+div#list_surround > table:nth-of-type(1) td,
+div#list_surround > table[class*="header_"] + table td {
+	width: calc(1370px / 6);
+	text-transform: uppercase;
+}
+
+div#list_surround > table[class*="header_"] + table td {
+	width: calc(1370px / 3);
+}
+
+div#list_surround > table:nth-of-type(1) td a,
+div#list_surround > table[class*="header_"] + table td a {
+	display: block;
+	background-color: white;
+	border-left: 1px solid #C7CBCD;
+	padding: 10px 15px;
+}
+
+div#list_surround > table[class*="header_"] + table td a {
+	font-size: 0px;
+}
+
+div#list_surround > table[class*="header_"] + table td:nth-of-type(4) a,
+div#list_surround > table[class*="header_"] + table td a:before {
+	font-size: 16px;
+}
+
+div#list_surround > table:nth-of-type(1) td:nth-of-type(1) a,
+div#list_surround > table[class*="header_"] + table td:nth-of-type(3) a {
+	border-left: 0px solid transparent;
+}
+
+div#list_surround > table[class*="header_"] + table td:nth-of-type(3) a:before {
+	content: "Score";
+}
+
+div#list_surround > table[class*="header_"] + table td:nth-of-type(5) a:before {
+	content: "Episodes";
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)),
+div.hide[id*="more"] {
+	float: left;
+	display: inline-block;
+	width: 225px;
+	height: 325px;
+}
+
+div#list_surround > table:nth-of-type(1),
+div#list_surround > table:not([class*="header_"]),
+div.hide[id*="more"],
+div#list_surround > table:not([class*="header_"]) td.category_totals:after {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+div#list_surround > table[class*="header_"] {
+	padding: 20px;
+	font-size: 3em;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) {
+	display: block;
+	float: none;
+	width: 1370px;
+	height: inherit;
+	margin: 0px auto 15px auto;
+}
+
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(1),
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(2),
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(6),
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(7),
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(8),
+div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) td:nth-of-type(9) {
+	display: none;
+}
+
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) {
+	background-color: white;
+	position: relative;
+	margin: 5px 5px 5px 230px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(4):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(5):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(8):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(9):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals {
+	display: block;
+	background-color: white;
+	width: 225px;
+	padding: 1px 7px 2px;
+	text-align: left;
+	z-index: 1;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(9):not(.table_header) {
+	padding-bottom: 7px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header) {
+	padding-top: 7px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(4):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(5):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(8):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(9):not(.table_header) {
+	position: absolute;
+	font-size: 0.9em;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header),
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header):hover,
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals:before {
+	border-bottom: 1px solid #C7CBCD;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(1):not(.table_header):not(.category_totals) {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: auto;
+	padding: 7px;
+	font-size: 0.9em;
+	z-index: 200;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) a {
+	font-size: 1.25em;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) small,
+a.animetitle:after {
+	display: block;
+	font-size: .8rem;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) div[style="float: right;"] small {
+	font-size: 0px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(2):not(.table_header) div[style="float: right;"] > small > a:first-child {
+	font-size: 11px;
+	text-transform: lowercase;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header) {
+	border-top: 1px solid #C7CBCD;
+	bottom: 102px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header):before {
+	content: "Score: ";
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(3):not(.table_header):after {
+	content: "/10";
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header) {
+	bottom: 83px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(6):not(.table_header):before {
+	content: "Type: ";
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(5):not(.table_header) {
+	bottom: 64px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(5):not(.table_header):before {
+	content: "Volumes: ";
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header) {
+	font-size: small;
+	padding-left: 12px;
+	padding-right: 12px;
+	z-index: 0;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header) div[style="float: right;"],
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header) span:nth-of-type(1) {
+	display: none;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header) span:nth-of-type(2) {
+	display: block !important;
+	white-space: pre-line;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(7):not(.table_header):hover {
+	z-index: 2;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(4):not(.table_header) {
+	bottom: 45px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(4):not(.table_header):before {
+	content: "Chapters: ";
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(8):not(.table_header) {
+	bottom: 26px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(8):not(.table_header):before {
+	content: "Started On: ";
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(9):not(.table_header) {
+	bottom: 0px;
+	padding-top: 2px;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td:nth-of-type(9):not(.table_header):before {
+	content: "Ended On: ";
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals,
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals:before {
+	display: block !important;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals {
+	margin-top: 18px;
+	padding: 7px;
+	font-size: 0.9em;
+	line-height: 20px;
+	white-space: pre-line;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals:before {
+	content: "Totals";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 7px;
+	font-size: 20px;
+	line-height: normal;
+}
+
+div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals:after {
+	content: "";
+	background: url("http://i.imgur.com/ZkMV8VC.png") no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 225px;
+	height: 325px;
+	margin-left: -225px;
+}
+
+div#grand_totals,
+div#copyright {
+	position: fixed;
+	right: 0px;
+	padding: 10px 18px;
+	color: #CDCDCD;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-variant: normal;
+	z-index: 100;
+}
+
+div#grand_totals {
+	top: 0px;
+	font-size: 11px;
+}
+
+div#copyright {
+	top: 16px;
+	margin-top: 0px !important;
+	font-size: 0px;
+}
+
+div#copyright:after {
+	content: "CSS style developed and designed by Winneon (@jesseabryan).";
+	font-size: 11px;
+}
+
+div#fancybox-outer {
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+div#fancybox-inner {
+	top: 0px !important;
+	left: 0px !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+div.fancy-bg {
+	display: none;
+}
+
+div.hide[id*="more"] {
+	display: block !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 5px 0px 0px -455px;
+}
+
+div.hide[id*="more"] * {
+	display: none;
+}
+
+@media (max-width: 1410px){
+	div#list_surround {
+		width: 920px;
+	}
+
+	div#list_surround > table:nth-of-type(1),
+	div#list_surround > table[class*="header_"] + table:not(:nth-of-type(1)) {
+		width: 910px;
+	}
+
+	div#list_surround > table:nth-of-type(1) {
+		font-size: .75rem;
+	}
+
+	div#list_surround > table[class*="header_"] + table td {
+		width: calc(910px / 3);
+	}
+}
