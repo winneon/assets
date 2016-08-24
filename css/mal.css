@@ -1,5 +1,5 @@
 /* Raleway font family import */
-@import url("http://fonts.googleapis.com/css?family=Raleway:400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800");
 
 html,
 body {
@@ -346,7 +346,7 @@ div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.catego
 
 div#list_surround > table:not([class*="header_"]):not(:nth-of-type(1)) td.category_totals:after {
 	content: "";
-	background: url("http://i.imgur.com/ZkMV8VC.png") no-repeat;
+	background: url("https://i.imgur.com/ZkMV8VC.png") no-repeat;
 	position: absolute;
 	top: 0px;
 	left: 0px;
