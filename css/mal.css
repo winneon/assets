@@ -1,6 +1,9 @@
 /* Raleway font family import */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800");
 
+/* Cover generator */
+@import url("https://malcat-gen.appspot.com/series?preset=more");
+
 html,
 body {
 	background-color: #F2F2F2;
